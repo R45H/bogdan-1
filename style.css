@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-Bold.woff") format("woff");
+    src: url("fonts/Montserrat-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -35,8 +35,9 @@
 
 body {
     margin: 0;
-    font-family: "RobotoSlab";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
+    font-weight: normal;
 }
 
 .Nav a,
@@ -63,44 +64,38 @@ body {
     align-self: stretch;
 }
 
-.HeaderNavigation {
+.Head-Nav {
     align-items: center;
     width: 80%;
     padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: center;
 }
 
-
-
 .Nav {
-    display: flex;
-    flex-grow: 3;
-    margin-left: auto;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-weight: normal;
-    font-size: 14pt;
-    color: white;
-    flex-wrap: wrap;
-    line-height: 20px;
+    display: inline-block;
     list-style-type: none;
+    position: absolute;
+    right: 50px;
+    left: auto;
 }
 
 .Nav li {
+    display: inline;
     margin-right: 30px;
+    color: white;
 }
 
-.Nav .logo {
+.Head-Nav .logo {
     margin-right: auto;
     flex-grow: 1;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 20pt;
     color: white;
     letter-spacing: 1px;
-
+    text-decoration: none;
+    width: auto;
 }
 
 .Nav li:last-child {
@@ -116,17 +111,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
-
 }
 
 .head_text1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 8ch;
-    font-weight: 500;
+    font-size: 60px;
     letter-spacing: 2px;
     text-align: center;
+    font-weight: bold;
 }
-
 
 .head_text2 {
     font-family: 'Roboto Slab', serif;
@@ -138,8 +130,6 @@ body {
 }
 
 .start_btm {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     border: 2px solid white;
     padding: 10px;
     text-transform: uppercase;
@@ -147,30 +137,29 @@ body {
 
 .serv-ht {
     margin-top: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
 }
 
-.text_services {
+.text-services {
     font-family: 'Roboto Slab', serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 15px;
     text-transform: capitalize;
     margin-top: 10px;
     margin-bottom: 30px;
+    width: 40%;
 }
 
-.Services {
+.services {
     display: flex;
     flex-direction: column;
     align-self: stretch;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    min-height: 60vh;
     vertical-align: middle;
     width: 80%;
 }
@@ -186,11 +175,11 @@ body {
 
 .footer {
     display: flex;
+    width: 100%;
     align-self: stretch;
     flex-direction: column;
     background-color: #c0301c;
     color: black;
-    height: 20ch;
     align-items: center;
 }
 
