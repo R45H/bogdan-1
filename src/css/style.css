@@ -1,47 +1,47 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-Regular.woff") format("woff"),
-         url("./fonts/Montserrat-Regular.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-italic.woff") format("woff"),
-         url("./fonts/Montserrat-italic.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Italic.woff") format("woff"),
+    url("../fonts/Montserrat-Italic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-Bold.woff") format("woff"),
-         url("./fonts/Montserrat-Bold.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-BoldItalic.woff") format("woff"),
-         url("./fonts/Montserrat-BoldItalic.woff2") format("woff2");
+    src: url("../fonts/Montserrat-BoldItalic.woff") format("woff"),
+    url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "RobotoSlab";
-    src: url("./fonts/RobotoSlab-regular.woff") format("woff"),
-         url("./fonts/RobotoSlab-regular.woff2") format("woff2");
+    src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
+    url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoSlab";
-    src: url("./fonts/RobotoSlab-Bold.woff") format("woff"),
-         url("./fonts/RobotoSlab-Bold.woff2") format("woff2");
+    src: url("../fonts/RobotoSlab-Bold.woff") format("woff"),
+    url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
@@ -49,24 +49,22 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.page {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 .nav a,
-.start-btm{
+.start-btm {
     color: #ffffff;
     text-decoration: none;
 }
 
-.start_btm:hover {
+.start-btm:hover {
     background-color: white;
     color: #000000;
 }
@@ -79,7 +77,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: url("images/bkg.jpg") no-repeat;
+    background: url("../images/bkg.jpg") no-repeat;
     background-size: cover;
     align-self: stretch;
 }
@@ -168,7 +166,7 @@ body {
 }
 
 .text-services {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'RobotoSlab', serif;
     font-weight: normal;
     font-size: 15px;
     text-transform: capitalize;
@@ -205,9 +203,8 @@ body {
     flex-direction: column;
     background-color: #c0301c;
     color: black;
-    align-items: center;
-    justify-items: flex-end;
-    margin-top: auto;
+    text-align: center;
+    flex: 0 0 auto;
 }
 
 .about {
