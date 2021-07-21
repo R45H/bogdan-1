@@ -1,36 +1,49 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-Regular.woff") format("woff");
+    src: url("./fonts/Montserrat-Regular.woff") format("woff"),
+         url("./fonts/Montserrat-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-italic.woff") format("woff");
+    src: url("./fonts/Montserrat-italic.woff") format("woff"),
+         url("./fonts/Montserrat-italic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-Bold.woff") format("woff");
+    src: url("./fonts/Montserrat-Bold.woff") format("woff"),
+         url("./fonts/Montserrat-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("fonts/Montserrat-BoldItalic.woff") format("woff");
+    src: url("./fonts/Montserrat-BoldItalic.woff") format("woff"),
+         url("./fonts/Montserrat-BoldItalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "RobotoSlab";
-    src: url("fonts/RobotoSlab.woff") format("woff");
-    font-weight: auto;
-    font-style: auto;
+    src: url("./fonts/RobotoSlab-regular.woff") format("woff"),
+         url("./fonts/RobotoSlab-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("./fonts/RobotoSlab-Bold.woff") format("woff"),
+         url("./fonts/RobotoSlab-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
@@ -40,8 +53,15 @@ body {
     font-weight: normal;
 }
 
-.Nav a,
-.start_btm{
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav a,
+.start-btm{
     color: #ffffff;
     text-decoration: none;
 }
@@ -51,11 +71,11 @@ body {
     color: #000000;
 }
 
-.Nav a:hover {
+.nav a:hover {
     border-bottom: 2px solid #ffffff;
 }
 
-.Home {
+.home {
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +84,7 @@ body {
     align-self: stretch;
 }
 
-.Head-Nav {
+.head-nav {
     align-items: center;
     width: 80%;
     padding-top: 40px;
@@ -72,37 +92,41 @@ body {
     margin-right: auto;
 }
 
-.Nav {
+.nav {
+    margin-top: 0;
     display: inline-block;
     list-style-type: none;
-    position: absolute;
     right: 50px;
     left: auto;
+    vertical-align: middle;
+    line-height: 40px;
+    float: right;
 }
 
-.Nav li {
-    display: inline;
+.nav li {
+    display: inline-block;
     margin-right: 30px;
     color: white;
 }
 
-.Head-Nav .logo {
+.head-nav .logo {
+    display: block;
+    float: left;
+    width: 100px;
+    clear: none;
     margin-right: auto;
-    flex-grow: 1;
-    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 20pt;
     color: white;
     letter-spacing: 1px;
     text-decoration: none;
-    width: auto;
 }
 
-.Nav li:last-child {
+.nav li:last-child {
     margin-right: 0;
 }
 
-.head_text {
+.head-text {
     display: flex;
     align-self: stretch;
     flex-direction: column;
@@ -113,14 +137,14 @@ body {
     text-transform: uppercase;
 }
 
-.head_text1 {
+.head-text1 {
     font-size: 60px;
     letter-spacing: 2px;
     text-align: center;
     font-weight: bold;
 }
 
-.head_text2 {
+.head-text2 {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 20px;
@@ -129,7 +153,7 @@ body {
     margin-bottom: 30px;
 }
 
-.start_btm {
+.start-btm {
     border: 2px solid white;
     padding: 10px;
     text-transform: uppercase;
@@ -151,6 +175,7 @@ body {
     margin-top: 10px;
     margin-bottom: 30px;
     width: 40%;
+    text-align: center;
 }
 
 .services {
@@ -181,8 +206,10 @@ body {
     background-color: #c0301c;
     color: black;
     align-items: center;
+    justify-items: flex-end;
+    margin-top: auto;
 }
 
-.About {
+.about {
     background-color: #f8f8f8;
 }
