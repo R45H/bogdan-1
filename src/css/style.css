@@ -1,23 +1,21 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-Regular.woff") format("woff"),
-    url("../fonts/Montserrat-Regular.woff2") format("woff2");
+        url("../fonts/Montserrat-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Italic.woff") format("woff"),
-    url("../fonts/Montserrat-Italic.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Bold.woff") format("woff"),
-    url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
@@ -25,7 +23,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-BoldItalic.woff") format("woff"),
-    url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
+        url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
@@ -33,22 +31,33 @@
 @font-face {
     font-family: "RobotoSlab";
     src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
-    url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
+        url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RobotoSlab";
-    src: url("../fonts/RobotoSlab-Bold.woff") format("woff"),
-    url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
+    src: url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -56,6 +65,35 @@ body {
 
 .content {
     flex: 1 0 auto;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center; /*временно*/
+}
+
+.section-first {
+    min-height: 100vh;
+    background: url("../images/bkg.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+}
+
+.section-color-red {
+    background-color: rgb(192, 48, 28);
+    opacity: 0.6;
+    color: #ffffff;
+}
+
+.section-color-gray {
+    background-color: #f8f8f8;
 }
 
 .nav a,
@@ -74,30 +112,13 @@ body {
 }
 
 .home {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    background: url("../images/bkg.jpg") no-repeat;
-    background-size: cover;
-    align-self: stretch;
-}
-
-.head-nav {
-    align-items: center;
-    width: 80%;
-    padding-top: 40px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }
 
 .nav {
-    margin-top: 0;
-    display: inline-block;
     list-style-type: none;
-    right: 50px;
-    left: auto;
-    vertical-align: middle;
-    line-height: 40px;
     float: right;
 }
 
@@ -107,14 +128,14 @@ body {
     color: white;
 }
 
-.head-nav .logo {
+.home .logo {
     display: block;
     float: left;
     width: 100px;
     clear: none;
     margin-right: auto;
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 20px;
     color: white;
     letter-spacing: 1px;
     text-decoration: none;
@@ -136,16 +157,15 @@ body {
 }
 
 .head-text1 {
-    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
     letter-spacing: 2px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .head-text2 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: capitalize;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -158,7 +178,6 @@ body {
 }
 
 .serv-ht {
-    margin-top: 40px;
     font-size: 20px;
     font-weight: normal;
     text-align: center;
@@ -166,12 +185,12 @@ body {
 }
 
 .text-services {
-    font-family: 'RobotoSlab', serif;
+    font-family: "RobotoSlab", serif;
     font-weight: normal;
     font-size: 15px;
     text-transform: capitalize;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 70px;
     width: 40%;
     text-align: center;
 }
@@ -184,7 +203,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     vertical-align: middle;
-    width: 80%;
 }
 
 .serv-blocks {
@@ -198,15 +216,15 @@ body {
 
 .footer {
     display: flex;
-    width: 100%;
     align-self: stretch;
     flex-direction: column;
+    width: 100%;
     background-color: #c0301c;
-    color: black;
-    text-align: center;
+    color: white;
     flex: 0 0 auto;
 }
 
 .about {
     background-color: #f8f8f8;
+    text-align: center;
 }
