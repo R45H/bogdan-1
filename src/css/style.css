@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: "RobotoSlab";
+    font-family: "Roboto Slab";
     src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
         url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
     font-weight: normal;
@@ -37,10 +37,15 @@
 }
 
 @font-face {
-    font-family: "RobotoSlab";
+    font-family: "Roboto Slab";
     src: url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
+}
+
+:root {
+    --font-primary: "Roboto Slab", serif;
+    --font-secondary: "Montserrat", sans-serif;
 }
 
 html {
@@ -54,7 +59,7 @@ html {
 }
 
 body {
-    font-family: "Roboto Slab", serif;
+    font-family: var(--font-primary);
     font-size: 14px;
     line-height: 1.5;
     color: #555;
@@ -68,17 +73,12 @@ body {
 }
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    text-align: center; /*временно*/
+    padding: 100px 0;
+    background: no-repeat center / cover;
 }
 
 .section-first {
     min-height: 100vh;
-    background: url("../images/bkg.jpg") no-repeat;
     background-size: cover;
     padding-top: 40px;
     display: flex;
@@ -86,49 +86,74 @@ body {
     align-self: stretch;
 }
 
-.section-color-red {
-    background-color: rgb(192, 48, 28);
-    opacity: 0.6;
-    color: #ffffff;
+.section-bg-primary {
+    background-color: #c0301c;
 }
 
-.section-color-gray {
+.section-bg-gray {
     background-color: #f8f8f8;
 }
 
-.nav a,
-.start-btm {
-    color: #ffffff;
+.section-fill-primary {
+    position: relative;
+}
+
+.section-fill-primary::before {
+    content: "";
+    background-color: #c0301c;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-fill-dark {
+    background-color: #000;
+    opacity: 0.45;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.container,
+.container-fluid {
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.white-text {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
     text-decoration: none;
 }
 
-.start-btm:hover {
-    background-color: white;
-    color: #000000;
+li:last-child {
+    margin-right: 0;
 }
 
-.nav a:hover {
-    border-bottom: 2px solid #ffffff;
-}
-
-.home {
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-}
-
-.nav {
-    list-style-type: none;
-    float: right;
-}
-
-.nav li {
-    display: inline-block;
-    margin-right: 30px;
-    color: white;
-}
-
-.home .logo {
+.logo {
     display: block;
     float: left;
     width: 100px;
@@ -136,95 +161,11 @@ body {
     margin-right: auto;
     font-weight: bold;
     font-size: 20px;
-    color: white;
+    color: #fff;
     letter-spacing: 1px;
     text-decoration: none;
 }
 
-.nav li:last-child {
-    margin-right: 0;
-}
-
-.head-text {
-    display: flex;
-    align-self: stretch;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;
-}
-
-.head-text1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.head-text2 {
-    font-size: 15px;
-    text-transform: capitalize;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.start-btm {
-    border: 2px solid white;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.serv-ht {
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.text-services {
-    font-family: "RobotoSlab", serif;
-    font-weight: normal;
-    font-size: 15px;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 70px;
-    width: 40%;
-    text-align: center;
-}
-
-.services {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-}
-
-.serv-blocks {
-    display: flex;
-    flex-grow: 3;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .footer {
-    display: flex;
-    align-self: stretch;
-    flex-direction: column;
-    width: 100%;
-    background-color: #c0301c;
-    color: white;
     flex: 0 0 auto;
-}
-
-.about {
-    background-color: #f8f8f8;
-    text-align: center;
 }
