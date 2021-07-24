@@ -50,6 +50,7 @@
     --color-gray: #f8f8f8;
     --color-white: #fff;
     --color-black: #000;
+    --color-text: #555;
     --header-height: 63px;
 }
 
@@ -67,7 +68,7 @@ body {
     font-family: var(--font-primary);
     font-size: 14px;
     line-height: 1.5;
-    color: #555;
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -79,6 +80,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.container {
+    max-width: 1170px;
 }
 
 .container,
@@ -94,7 +99,7 @@ body {
     margin-top: calc(-1 * var(--header-height));
 }
 
-.header {
+header {
     flex: 0 0 auto;
     height: var(--header-height);
     display: flex;
@@ -103,20 +108,20 @@ body {
     z-index: 1;
 }
 
-.footer {
-    flex: 0 0 auto;
-}
-
-.section {
+section,
+footer {
     padding: 100px 0;
     background: no-repeat center / cover;
+}
+
+footer {
+    flex: 0 0 auto;
 }
 
 .section-first {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-size: cover;
     padding-top: calc(100px + var(--header-height));
 }
 
@@ -153,10 +158,6 @@ body {
     opacity: 0.45;
 }
 
-.container {
-    max-width: 1170px;
-}
-
 .logo {
     display: inline-block;
     font-weight: bold;
@@ -181,11 +182,11 @@ body {
     margin-right: 0;
 }
 
-.nav li a {
+.nav a {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.nav li a:hover {
+.nav a:hover {
     border-bottom: 2px solid var(--color-white);
 }
