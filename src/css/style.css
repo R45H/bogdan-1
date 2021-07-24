@@ -108,14 +108,13 @@ body {
     z-index: 1;
 }
 
-.section,
-.footer {
-    padding: 100px 0;
-    background: no-repeat center / cover;
-}
-
 .footer {
     flex: 0 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+    background: no-repeat center / cover;
 }
 
 .section-first {
