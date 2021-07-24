@@ -99,7 +99,7 @@ body {
     margin-top: calc(-1 * var(--header-height));
 }
 
-header {
+.header {
     flex: 0 0 auto;
     height: var(--header-height);
     display: flex;
@@ -108,13 +108,13 @@ header {
     z-index: 1;
 }
 
-section,
-footer {
+.section,
+.footer {
     padding: 100px 0;
     background: no-repeat center / cover;
 }
 
-footer {
+.footer {
     flex: 0 0 auto;
 }
 
