@@ -9,12 +9,12 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <div class="content">
-            <div id="header" class="section-first" style="background-image: url('./images/bg.jpg')">
-                <div class="container">
+        <div id="home" class="header">
+            <div class="section">
+                <div class="container home">
                     <a href="/" class="logo">Startup</a>
-                    <ul>
-                        <li><a href="#header">Home</a></li>
+                    <ul class="nav">
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#works">Works</a></li>
@@ -23,8 +23,12 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
 
-                <div class="container white-text">
+        <div class="content">
+            <div class="section section-first section-fill-dark" style="background-image: url('./images/bg.jpg')">
+                <div class="container-fluid text-white text-center">
                     <div>Welcome to startup</div>
                     <div>You favorite creative agency template</div>
                     <a href="/">Get started</a>
@@ -32,7 +36,7 @@
             </div>
 
             <div id="services" class="section">
-                <div class="container">
+                <div class="container text-center">
                     <div>Services</div>
                     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minim</div>
                     <div>
@@ -64,25 +68,35 @@
                 </div>
             </div>
 
-            <div id="about" class="section section-bg-gray">About us</div>
-
-            <div id="works" class="section">Works</div>
-
-            <div class="section section-fill-primary" style="background-image: url('./images/bg-2.jpg')">
-                <div class="container white-text">Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!</div>
+            <div id="about" class="section section-bg-gray">
+                <div class="container text-center">About us</div>
             </div>
 
-            <div id="blog" class="section">Recent blog posts</div>
+            <div id="works" class="section">
+                <div class="container text-center">Works</div>
+            </div>
 
-            <div id="clients" class="section section-bg-gray">Clients</div>
+            <div class="section section-fill-primary" style="background-image: url('./images/bg-2.jpg')">
+                <div class="container-fluid text-white text-center">
+                    Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!
+                </div>
+            </div>
 
-            <div id="contact" class="section">Contact</div>
+            <div id="blog" class="section">
+                <div class="container text-center">Recent blog posts</div>
+            </div>
+
+            <div id="clients" class="section section-bg-gray">
+                <div class="container text-center">Clients</div>
+            </div>
+
+            <div id="contact" class="section">
+                <div class="container text-center">Contact</div>
+            </div>
         </div>
 
         <div class="footer section section-bg-primary">
-            <div class="container">
-                <div class="white-text">© 2015 Startup, Designed by ShapedTheme</div>
-            </div>
+            <div class="container-fluid text-center text-white">© 2015 Startup, Designed by ShapedTheme</div>
         </div>
     </body>
 </html>
