@@ -1,4 +1,19 @@
 @font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
+        url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-Regular.woff") format("woff"),
         url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -28,32 +43,18 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Roboto Slab";
-    src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
-        url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    src: url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-}
-
 :root {
     --font-primary: "Roboto Slab", serif;
     --font-secondary: "Montserrat", sans-serif;
     --color-primary: #c0301c;
+    --color-text: #555;
     --color-gray: #f8f8f8;
     --color-white: #fff;
     --color-black: #000;
-    --color-text: #555;
     --header-height: 63px;
 }
 
+/* Common */
 html {
     box-sizing: border-box;
 }
@@ -73,7 +74,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* ===== */
 
+/* Helpers */
 .text-white {
     color: var(--color-white);
 }
@@ -81,23 +84,21 @@ body {
 .text-center {
     text-align: center;
 }
+/* ===== */
 
+/* Grid */
 .container {
     max-width: 1170px;
+    margin: 0 auto;
 }
 
 .container,
 .container-fluid {
     width: 100%;
     padding: 0 15px;
-    margin: 0 auto;
     position: relative;
 }
-
-.content {
-    flex: 1 0 auto;
-    margin-top: calc(-1 * var(--header-height));
-}
+/* ===== */
 
 .header {
     flex: 0 0 auto;
@@ -106,6 +107,11 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     z-index: 1;
+}
+
+.content {
+    flex: 1 0 auto;
+    margin-top: calc(-1 * var(--header-height));
 }
 
 .footer {
