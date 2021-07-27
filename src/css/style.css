@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Roboto Slab";
     src: url("../fonts/RobotoSlab-Regular.woff") format("woff"),
-        url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
+    url("../fonts/RobotoSlab-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -16,7 +16,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-Regular.woff") format("woff"),
-        url("../fonts/Montserrat-Regular.woff2") format("woff2");
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -38,7 +38,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-BoldItalic.woff") format("woff"),
-        url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
+    url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
@@ -77,11 +77,11 @@ body {
 /* ===== */
 
 /* Helpers */
-.text-white {
+.text_white {
     color: var(--color-white);
 }
 
-.text-center {
+.text_center {
     text-align: center;
 }
 /* ===== */
@@ -93,7 +93,7 @@ body {
 }
 
 .container,
-.container-fluid {
+.container_fluid {
     width: 100%;
     padding: 0 15px;
     position: relative;
@@ -130,21 +130,21 @@ body {
     padding-top: calc(100px + var(--header-height));
 }
 
-.section-bg-primary {
+.section_bg-primary {
     background-color: var(--color-primary);
 }
 
-.section-bg-gray {
+.section_bg-gray {
     background-color: var(--color-gray);
 }
 
-.section-fill-primary,
-.section-fill-dark {
+.section_fill-primary,
+.section_fill-dark {
     position: relative;
 }
 
-.section-fill-primary::before,
-.section-fill-dark::before {
+.section_fill-primary::before,
+.section_fill-dark::before {
     content: "";
     position: absolute;
     top: 0;
@@ -153,12 +153,12 @@ body {
     height: 100%;
 }
 
-.section-fill-primary::before {
+.section_fill-primary::before {
     background-color: var(--color-primary);
     opacity: 0.6;
 }
 
-.section-fill-dark::before {
+.section_fill-dark::before {
     background-color: var(--color-black);
     opacity: 0.45;
 }
@@ -178,20 +178,20 @@ body {
     list-style-type: none;
 }
 
-.nav li {
+.nav__item {
     display: inline-block;
     margin-right: 30px;
 }
 
-.nav li:last-child {
+.nav__item:last-child {
     margin-right: 0;
 }
 
-.nav a {
+.link {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.nav a:hover {
+.link:hover {
     border-bottom: 2px solid var(--color-white);
 }
