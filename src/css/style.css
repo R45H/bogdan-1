@@ -187,11 +187,11 @@ body {
     margin-right: 0;
 }
 
-.link {
+.nav__link {
     text-decoration: none;
     color: var(--color-white);
 }
 
-.link:hover {
+.nav__link:hover {
     border-bottom: 2px solid var(--color-white);
 }
