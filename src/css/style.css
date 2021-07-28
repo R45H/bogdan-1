@@ -123,18 +123,18 @@ body {
     background: no-repeat center / cover;
 }
 
-.section-first {
+.section_first {
     display: flex;
     align-items: center;
     min-height: 100vh;
     padding-top: calc(100px + var(--header-height));
 }
 
-.section_bg-primary {
+.section_bg_primary {
     background-color: var(--color-primary);
 }
 
-.section_bg-gray {
+.section_bg_gray {
     background-color: var(--color-gray);
 }
 
