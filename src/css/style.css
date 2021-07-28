@@ -77,11 +77,11 @@ body {
 /* ===== */
 
 /* Helpers */
-.text_white {
+.text-white {
     color: var(--color-white);
 }
 
-.text_center {
+.text-center {
     text-align: center;
 }
 /* ===== */
@@ -93,7 +93,7 @@ body {
 }
 
 .container,
-.container_fluid {
+.container-fluid {
     width: 100%;
     padding: 0 15px;
     position: relative;
@@ -138,13 +138,13 @@ body {
     background-color: var(--color-gray);
 }
 
-.section_fill-primary,
-.section_fill-dark {
+.section_fill_primary,
+.section_fill_dark {
     position: relative;
 }
 
-.section_fill-primary::before,
-.section_fill-dark::before {
+.section_fill_primary::before,
+.section_fill_dark::before {
     content: "";
     position: absolute;
     top: 0;
@@ -153,12 +153,12 @@ body {
     height: 100%;
 }
 
-.section_fill-primary::before {
+.section_fill_primary::before {
     background-color: var(--color-primary);
     opacity: 0.6;
 }
 
-.section_fill-dark::before {
+.section_fill_dark::before {
     background-color: var(--color-black);
     opacity: 0.45;
 }
