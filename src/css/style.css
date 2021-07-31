@@ -195,3 +195,87 @@ body {
 .nav__link:hover {
     border-bottom: 2px solid var(--color-white);
 }
+
+/* buttons */
+
+.button,
+.works__button,
+.works__button::after {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button {
+    font-size: 12px;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    margin-top: 54px;
+    padding: 20px 35px;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    transition: background-color 0.5s;
+}
+
+.works__button {
+    font-size: 10px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 5px 15px;
+    border: 2px solid var(--color-black);
+}
+
+.works__button::after {
+    content: "";
+    position: relative;
+    background: url("../images/arrow.svg") no-repeat right / cover;
+    right: -5px;
+    width: 7px;
+    height: 7px;
+    z-index: 1;
+}
+
+.button:active,
+.works__button:active {
+    background-color: var(--color-primary);
+}
+
+.logo:focus,
+.button:focus,
+.nav__link:focus,
+.works__button:focus {
+    outline: none;
+}
+
+.button:focus,
+.works__button:focus {
+    border: 2px solid var(--color-primary);
+}
+
+.logo:focus,
+.nav__link:focus {
+    border-bottom: 2px solid var(--color-white);
+}
+
+/* texts */
+
+.home__title {
+    font-family: var(--font-secondary);
+    font-weight: normal;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.home__subtitle {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.our-work_text {
+    font-size: 22px;
+}
