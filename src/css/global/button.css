@@ -2,10 +2,10 @@
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16pt;
     color: var(--color-white);
     border: 2px solid var(--color-white);
-    padding: 10px 25px;
+    padding: 19px 35px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -33,5 +33,6 @@
 }
 
 .button_out-works {
-    font-size: 14px;
+    font-size: 18pt;
+    padding: 19px 27px;
 }
