@@ -1,0 +1,8 @@
+.header {
+    flex: 0 0 auto;
+    height: var(--header-height);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 1;
+}
