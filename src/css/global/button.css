@@ -2,19 +2,19 @@
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16pt;
+    font-size: 16px;
     color: var(--color-white);
     border: 2px solid var(--color-white);
-    padding: 19px 35px;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    padding: 12px 24px;
+    transition: var(--button-transition);
 }
 
 .button:hover,
 .button_works:hover svg {
     background-color: var(--color-white);
     color: var(--color-text);
-    transition: none;
     fill: var(--color-text);
+    transition: none;
 }
 
 .button_works {
@@ -33,6 +33,5 @@
 }
 
 .button_out-works {
-    font-size: 18pt;
-    padding: 19px 27px;
+    font-size: 18px;
 }
