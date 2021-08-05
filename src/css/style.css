@@ -1,18 +1,11 @@
 /* Global */
-@import "global/fonts.css"; /* Шрифты */
-@import "global/variables.css"; /* Переменные */
-@import "global/grid.css"; /* Сетка */
-@import "global/common.css"; /* Общие */
-@import "global/button.css"; /* Кнопки */
-@import "global/section.css"; /*  Параметры секций */
+@import "global/index.css";
 
 /* Blocks */
 @import "blocks/header.css";
+@import "blocks/logo.css";
+@import "blocks/nav.css";
 @import "blocks/content.css";
-@import "blocks/services.css";
-@import "blocks/about.css";
-@import "blocks/works.css";
-@import "blocks/blog.css";
-@import "blocks/clients.css";
-@import "blocks/contact.css";
 @import "blocks/footer.css";
+@import "blocks/button.css";
+@import "blocks/section.css";

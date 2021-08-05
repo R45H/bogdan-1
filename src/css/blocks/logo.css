@@ -1,0 +1,8 @@
+.logo {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
