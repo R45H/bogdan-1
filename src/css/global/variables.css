@@ -7,5 +7,5 @@
     --color-white: #fff;
     --color-black: #000;
     --header-height: 63px;
-    --button-transition: .5s ease;
+    --transition: 0.3s ease;
 }

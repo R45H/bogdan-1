@@ -3,5 +3,8 @@
     "version": "1.0.0",
     "devDependencies": {
         "prettier": "^2.3.2"
+    },
+    "scripts": {
+        "format": "prettier src --write"
     }
 }

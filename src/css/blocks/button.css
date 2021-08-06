@@ -6,30 +6,18 @@
     color: var(--color-white);
     border: 2px solid var(--color-white);
     padding: 12px 24px;
-    transition: var(--button-transition);
+    transition: var(--transition);
+    fill: currentColor;
 }
 
 .button:hover {
     background-color: var(--color-white);
     color: var(--color-text);
-    transition: none;
 }
 
-.works__button {
-    padding: 5px 20px;
-    font-size: 10px;
-    border: none;
-    background-color: var(--color-white);
-    color: var(--color-primary);
-}
-
-.works__button:hover .arrow {
-    fill: currentColor;
-}
-
-.arrow {
+.icon {
     position: relative;
-    height: 8px;
-    right: -12px;
+    height: 12px;
+    margin-left: 6px;
     fill: currentColor;
 }
