@@ -15,7 +15,7 @@
     color: var(--color-text);
 }
 
-.icon {
+.button__icon {
     position: relative;
     height: 12px;
     margin-left: 6px;
