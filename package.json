@@ -1,7 +1,19 @@
 {
     "name": "bogdan-1",
     "version": "1.0.0",
+    "license": "MIT",
     "devDependencies": {
+        "husky": "^7.0.1",
+        "lint-staged": "^11.1.2",
         "prettier": "^2.3.2"
+    },
+    "scripts": {
+        "format": "prettier src/**/*.{html,css} --write",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.{html,css}": [
+            "prettier --write"
+        ]
     }
 }
