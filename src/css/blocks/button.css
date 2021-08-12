@@ -45,7 +45,7 @@ input.button {
     margin-left: 12px;
 }
 
-.work__button {
+.button_type_light {
     padding: 8px 16px;
     font-size: 10px;
     border: none;
@@ -53,8 +53,7 @@ input.button {
     color: var(--color-primary);
 }
 
-.work__button .button__icon {
-    flex: none;
+.button_type_light .button__icon {
     height: 6px;
     margin-left: 8px;
 }
@@ -69,11 +68,4 @@ input.button {
 .button_type_form:hover {
     background-color: var(--color-text);
     color: var(--color-white);
-}
-
-/*test icon*/
-.button_type_form .button__icon {
-    flex: none;
-    height: 8px;
-    margin-left: 10px;
 }
