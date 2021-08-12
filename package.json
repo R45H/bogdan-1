@@ -8,7 +8,6 @@
         "prettier": "^2.3.2"
     },
     "scripts": {
-
         "format": "prettier src/**/*.{html,css} --write",
         "prepare": "husky install"
     },
