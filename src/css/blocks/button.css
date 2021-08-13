@@ -40,7 +40,8 @@ input.button {
     box-shadow: 0 0 2px 1px var(--color-white-active);
 }
 
-.button__icon {
+.button__icon,
+.button_type_form .button__icon {
     flex: none;
     height: 12px;
     margin-left: 12px;
@@ -60,15 +61,14 @@ input.button {
 }
 
 .button_type_form {
-    font-size: 7px;
+    font-size: 10px;
     border: 1px solid var(--color-text);
     color: var(--color-text);
     letter-spacing: 1px;
 }
 
 .button_type_form .button__icon {
-    height: 5px;
-    margin-left: 12px;
+    height: 7px;
 }
 
 .button_type_form:hover {
