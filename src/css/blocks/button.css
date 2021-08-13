@@ -34,6 +34,7 @@ input.button {
 }
 
 .button:active {
+    color: var(--color-text);
     background-color: var(--color-white-active);
     border-color: var(--color-white-active);
     box-shadow: 0 0 2px 1px var(--color-white-active);
@@ -59,13 +60,29 @@ input.button {
 }
 
 .button_type_form {
-    font-size: 10px;
+    font-size: 7px;
     border: 1px solid var(--color-text);
     color: var(--color-text);
     letter-spacing: 1px;
 }
 
+.button_type_form .button__icon {
+    height: 5px;
+    margin-left: 12px;
+}
+
 .button_type_form:hover {
     background-color: var(--color-text);
+    color: var(--color-white);
+}
+
+.button_type_form:focus {
+    box-shadow: 0 0 2px 1px var(--color-text);
+}
+
+.button_type_form:active {
+    background-color: var(--color-text-active);
+    border-color: var(--color-text-active);
+    box-shadow: 0 0 2px 1px var(--color-text-active);
     color: var(--color-white);
 }
