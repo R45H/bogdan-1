@@ -18,6 +18,14 @@ body {
     min-height: 100vh;
 }
 
+a:not([class]),
+a[class=""] {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid CurrentColor;
+    transition: var(--transition);
+}
+
 /* Helpers */
 
 .text-white {

@@ -1,0 +1,19 @@
+.link {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid currentColor;
+    transition: var(--transition);
+}
+
+.link:hover {
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+}
+
+.link:focus {
+    color: var(--color-black);
+}
+
+.link:active {
+    color: var(--color-text-active);
+}
