@@ -7,13 +7,12 @@
 
 .link:hover {
     color: var(--color-primary);
-    border-bottom: 1px solid currentColor;
 }
 
 .link:focus {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .link:active {
-    color: var(--color-text-active);
+    color: var(--color-primary-active);
 }

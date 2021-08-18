@@ -22,8 +22,23 @@ a:not([class]),
 a[class=""] {
     text-decoration: none;
     color: var(--color-text);
-    border-bottom: 1px solid CurrentColor;
+    border-bottom: 1px solid currentColor;
     transition: var(--transition);
+}
+
+a:not([class]):hover,
+a[class=""]:hover {
+    color: var(--color-primary);
+}
+
+a:not([class]):focus,
+a[class=""]:focus {
+    color: var(--color-primary);
+}
+
+a:not([class]):active,
+a[class=""]:active {
+    color: var(--color-primary-active);
 }
 
 /* Helpers */
