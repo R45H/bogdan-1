@@ -5,10 +5,7 @@
     transition: var(--transition);
 }
 
-.link:hover {
-    color: var(--color-primary);
-}
-
+.link:hover,
 .link:focus {
     color: var(--color-primary);
 }

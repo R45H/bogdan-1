@@ -27,10 +27,7 @@ a[class=""] {
 }
 
 a:not([class]):hover,
-a[class=""]:hover {
-    color: var(--color-primary);
-}
-
+a[class=""]:hover,
 a:not([class]):focus,
 a[class=""]:focus {
     color: var(--color-primary);
