@@ -6,3 +6,20 @@
     justify-content: space-between;
     z-index: 1;
 }
+
+.header__text {
+    font-family: var(--font-secondary);
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    user-select: none;
+}
+
+.header__subtext {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: normal;
+    user-select: none;
+}

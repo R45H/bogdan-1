@@ -42,3 +42,20 @@
     background-color: var(--color-black);
     opacity: 0.45;
 }
+
+.section__text {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    user-select: none;
+}
+
+.section__text_small {
+    font-size: 14px;
+}
+
+.section__subtext {
+    font-size: 16px;
+    user-select: none;
+}
