@@ -1,0 +1,15 @@
+.link {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid currentColor;
+    transition: var(--transition);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--color-primary);
+}
+
+.link:active {
+    color: var(--color-primary-active);
+}
