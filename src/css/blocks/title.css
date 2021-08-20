@@ -2,15 +2,15 @@
     font-family: var(--font-secondary);
     font-size: 20px;
     text-transform: uppercase;
-    user-select: none;
+    line-height: 1.2;
 }
 
-.title_head {
+.title_big {
     font-size: 48px;
     font-weight: bold;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
 }
 
-.title_section_block {
+.title_small {
     font-size: 14px;
 }
