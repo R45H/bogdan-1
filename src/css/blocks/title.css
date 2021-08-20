@@ -1,0 +1,15 @@
+.title {
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.title_head {
+    font-size: 48px;
+    letter-spacing: 7px;
+}
+
+.title_section_block {
+    font-size: 14px;
+}
