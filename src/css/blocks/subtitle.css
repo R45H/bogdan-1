@@ -1,0 +1,15 @@
+.subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.subtitle_size_lg {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.subtitle_size_sm {
+    font-size: 12px;
+    text-transform: uppercase;
+}
