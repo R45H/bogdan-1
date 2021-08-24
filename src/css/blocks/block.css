@@ -40,3 +40,7 @@
 .block__item_dark:only-child {
     padding: 16px;
 }
+
+.block__item_wide {
+    width: 100%;
+}

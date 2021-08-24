@@ -4,6 +4,8 @@
 /* Blocks */
 @import "blocks/header.css";
 @import "blocks/logo.css";
+@import "blocks/title.css";
+@import "blocks/subtitle.css";
 @import "blocks/nav.css";
 @import "blocks/link.css";
 @import "blocks/content.css";
