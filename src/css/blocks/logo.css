@@ -5,4 +5,14 @@
     color: var(--color-white);
     letter-spacing: 1px;
     text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--color-white-active);
+}
+
+.logo:active {
+    color: var(--color-primary);
 }
