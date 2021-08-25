@@ -5,14 +5,15 @@
     color: var(--color-white);
     letter-spacing: 1px;
     text-decoration: none;
+    user-select: none;
     transition: var(--transition);
 }
 
 .logo:hover,
 .logo:focus {
-    color: var(--color-white-active);
+    color: var(--color-white-darker);
 }
 
 .logo:active {
-    color: var(--color-primary);
+    color: var(--color-white-darkest);
 }

@@ -35,9 +35,9 @@ input.button {
 
 .button:active {
     color: var(--color-text);
-    background-color: var(--color-white-active);
-    border-color: var(--color-white-active);
-    box-shadow: 0 0 2px 1px var(--color-white-active);
+    background-color: var(--color-white-darker);
+    border-color: var(--color-white-darker);
+    box-shadow: 0 0 2px 1px var(--color-white-darker);
 }
 
 .button__icon {
