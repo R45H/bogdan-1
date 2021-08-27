@@ -5,30 +5,13 @@
     list-style-type: none;
 }
 
-.nav__item {
-    padding-right: 30px;
-}
-
-.nav__item:last-child {
-    padding-right: 0;
-}
-
 .nav__link {
-    position: relative;
     outline: none;
+    padding: 5px 15px;
     text-decoration: none;
     color: var(--color-white);
     transition: var(--transition);
     border-bottom: 2px solid transparent;
-}
-
-.nav__link:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -15px;
-    right: -15px;
-    bottom: -10px;
 }
 
 .nav__link:hover,
