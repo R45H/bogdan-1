@@ -6,6 +6,7 @@
 }
 
 .nav__link {
+    display: block;
     outline: none;
     padding: 8px 16px;
     text-decoration: none;
