@@ -1,0 +1,19 @@
+.social {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.social__icon {
+    display: block;
+    background: url("../../images/svg/social.svg") no-repeat 6px 8px; /*Постарался выровнить иконку по центру*/
+    width: 31px;
+    height: 31px;
+    margin: 7px;
+}
+
+.social__icon_ellipse {
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+}
