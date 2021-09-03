@@ -7,8 +7,9 @@
     --color-text-active: #3d3d3d;
     --color-gray: #f8f8f8;
     --color-white: #fff;
-    --color-white-active: #ccc;
+    --color-white-darker: #ccc;
+    --color-white-darkest: #999;
     --color-black: #000;
-    --header-height: 63px;
+    --header-height: 72px;
     --transition: 0.3s ease;
 }
