@@ -1,8 +1,5 @@
 .social {
-    margin: 0;
-    padding: 0;
     display: inline-flex;
-    list-style-type: none;
 }
 
 .social__link {
@@ -12,13 +9,14 @@
 }
 
 .social__link:hover {
-    fill: var(--color-white);
-    background: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
 .social__link_alternative {
-    width: 31px;
-    height: 31px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
 }
 
 .social__link_alternative:not(:last-child) {
@@ -26,18 +24,6 @@
 }
 
 .social__icon {
-    display: block;
-}
-
-.social__icon_alternative {
-    display: block;
-    border: 2px solid var(--color-white);
-    border-radius: 50%;
     fill: var(--color-white);
-    transition: var(--transition);
-}
-
-.social__icon_alternative:hover {
-    fill: var(--color-primary);
-    border-color: var(--color-primary);
+    margin: 8px;
 }
