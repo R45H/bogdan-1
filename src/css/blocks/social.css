@@ -1,10 +1,16 @@
 .social {
     display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.social__wrap {
+    margin: -8px;
 }
 
 .social__link {
     width: 28px;
     height: 28px;
+    margin: 8px;
     transition: var(--transition);
 }
 
