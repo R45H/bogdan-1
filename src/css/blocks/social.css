@@ -17,6 +17,7 @@
     background-color: var(--color-primary);
 }
 
+/*
 .social__link_alternative {
     width: 32px;
     height: 32px;
@@ -33,6 +34,7 @@
 .social__link_alternative:not(:last-child) {
     margin-right: 14px;
 }
+*/
 
 .social__icon {
     fill: var(--color-white);
