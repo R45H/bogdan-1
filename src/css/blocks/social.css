@@ -4,7 +4,7 @@
     margin: -8px;
 }
 
-.social__link a {
+.social__link {
     width: 28px;
     height: 28px;
     margin: 8px;
@@ -13,11 +13,11 @@
     transition: var(--transition);
 }
 
-.social__link a:hover {
+.social__link:hover {
     background-color: var(--color-primary);
 }
 
-.social__link_alternative a {
+.social__link_alternative {
     width: 32px;
     height: 32px;
     border: 2px solid var(--color-white);
@@ -26,11 +26,11 @@
     transition: var(--transition);
 }
 
-.social__link_alternative a:hover {
+.social__link_alternative:hover {
     background-color: var(--color-primary);
 }
 
-.social__link_alternative a:not(:last-child) {
+.social__link_alternative:not(:last-child) {
     margin-right: 14px;
 }
 
