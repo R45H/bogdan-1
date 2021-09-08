@@ -1,31 +1,36 @@
-.social div:nth-of-type(1) {
+.social__wrap {
     display: inline-flex;
     flex-wrap: wrap;
-}
-
-.social__wrap {
     margin: -8px;
 }
 
-.social__link {
+.social__link a {
     width: 28px;
     height: 28px;
     margin: 8px;
+    margin-left: 0;
+    margin-right: 0;
     transition: var(--transition);
 }
 
-.social__link:hover {
+.social__link a:hover {
     background-color: var(--color-primary);
 }
 
-.social__link_alternative {
+.social__link_alternative a {
     width: 32px;
     height: 32px;
     border: 2px solid var(--color-white);
     border-radius: 50%;
+    margin: 8px;
+    transition: var(--transition);
 }
 
-.social__link_alternative:not(:last-child) {
+.social__link_alternative a:hover {
+    background-color: var(--color-primary);
+}
+
+.social__link_alternative a:not(:last-child) {
     margin-right: 14px;
 }
 
