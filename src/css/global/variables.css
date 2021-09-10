@@ -10,6 +10,14 @@
     --color-white-darker: #ccc;
     --color-white-darkest: #999;
     --color-black: #000;
+    --color-fb: #1877f2;
+    --color-fb-active: #0f59bf;
+    --color-tw: #1da1f2;
+    --color-tw-active: #1d76bf;
+    --color-gp: #db4437;
+    --color-gp-active: #a8352a;
+    --color-linkedin: #0a66c2;
+    --color-linkedin-active: #0a4c8f;
     --header-height: 72px;
     --transition: 0.3s ease;
 }
