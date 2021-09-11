@@ -1,7 +1,6 @@
 .social__wrap {
     display: inline-flex;
     flex-wrap: wrap;
-    margin: -8px 0;
 }
 
 .social__link {
@@ -17,6 +16,19 @@
 
 .social__link:active {
     background-color: var(--color-primary-active);
+}
+
+.social_alternative .social__wrap {
+    margin: -8px;
+}
+
+.social_alternative .social__link {
+    margin: 8px;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
 }
 
 .social__color_fb:hover {
@@ -49,17 +61,6 @@
 
 .social__color_linkedin:active {
     background-color: var(--color-linkedin-active);
-}
-
-.social__link_alternative {
-    overflow: hidden;
-    width: 35px;
-    height: 35px;
-    border: 2px solid var(--color-white);
-    border-radius: 50%;
-    padding: 8px;
-    margin: 7px;
-    transition: var(--transition);
 }
 
 .social__icon {
