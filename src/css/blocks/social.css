@@ -1,14 +1,12 @@
-.social {
-    line-height: 1;
-}
-
 .social__wrap {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .social__link {
-    padding: 8px;
+    padding: 6px;
     width: 28px;
     height: 28px;
     transition: var(--transition);
@@ -66,6 +64,7 @@
 }
 
 .social_alternative .social__link {
+    padding: 8px;
     margin: 8px;
     width: 35px;
     height: 35px;
