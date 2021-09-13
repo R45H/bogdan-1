@@ -1,9 +1,14 @@
+.social {
+    line-height: 1;
+}
+
 .social__wrap {
     display: inline-flex;
     flex-wrap: wrap;
 }
 
 .social__link {
+    padding: 8px;
     width: 28px;
     height: 28px;
     transition: var(--transition);
@@ -50,7 +55,7 @@
 }
 
 .social__icon {
-    padding: 6px;
+    display: block;
     width: 100%;
     height: 100%;
     fill: var(--color-white);
@@ -66,8 +71,4 @@
     height: 35px;
     border: 2px solid var(--color-white);
     border-radius: 50%;
-}
-
-.social_alternative .social__icon {
-    padding: 8px;
 }
