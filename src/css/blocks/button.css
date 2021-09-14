@@ -42,6 +42,7 @@ input.button {
 
 .button__icon {
     flex: none;
+    width: 8px;
     height: 12px;
     margin-left: 12px;
 }
