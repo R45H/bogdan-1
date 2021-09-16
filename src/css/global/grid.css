@@ -13,8 +13,6 @@
 .row {
     margin: -16px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .col,
