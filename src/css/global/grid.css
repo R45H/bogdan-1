@@ -13,6 +13,7 @@
 .row {
     margin: -16px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col,
