@@ -2,29 +2,29 @@
     display: flex;
 }
 
-.icon div {
+.icon__item {
     width: 30px;
     height: 30px;
     padding: 6px;
     margin: 6px;
 }
 
-.icon svg {
+.icon__svg {
     width: 100%;
     height: 100%;
 }
 
-.ratio {
+.icon_ratio {
+    display: block;
+}
+
+.icon__wrap {
     position: relative;
-    width: 100%;
     padding-top: 100%;
 }
-.ratio svg {
+
+.icon_ratio .icon__svg {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
 }
