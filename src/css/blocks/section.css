@@ -3,11 +3,10 @@
     background: no-repeat center / cover;
 }
 
-.section_first {
+.section_full-height {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    padding-top: calc(100px + var(--header-height));
 }
 
 .section_bg_primary {

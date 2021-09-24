@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
-    <body>
-        <header class="header container">
+
+    <body class="wrapper">
+        <header class="header wrapper__header container">
             <a href="/" class="logo">Startup</a>
             <ul class="nav">
                 <li><a href="#home" class="nav__link">Home</a></li>
@@ -22,10 +23,10 @@
             </ul>
         </header>
 
-        <main class="content">
+        <main class="wrapper__content wrapper__content_with-header">
             <section
                 id="home"
-                class="section section_first section_fill_dark"
+                class="section section_full-height section_fill_dark wrapper__section-with-header"
                 style="background-image: url('./images/bg.jpg')"
             >
                 <div class="container-fluid text-white text-center">
@@ -129,7 +130,7 @@
             </div>
         </main>
 
-        <footer class="footer section section_bg_primary">
+        <footer class="section section_bg_primary wrapper__footer">
             <div class="container-fluid text-center text-white">© 2015 Startup, Designed by ShapedTheme</div>
         </footer>
     </body>

@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper__header {
+    flex: 0 0 auto;
+    height: var(--header-height);
+    z-index: 1;
+}
+
+.wrapper__content {
+    flex: 1 0 auto;
+}
+
+.wrapper__content_with-header {
+    margin-top: calc(-1 * var(--header-height));
+}
+
+.wrapper__section-with-header {
+    padding-top: calc(100px + var(--header-height));
+}
+
+.wrapper__footer {
+    flex: 0 0 auto;
+}
