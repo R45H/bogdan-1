@@ -25,3 +25,15 @@
 .wrapper__footer {
     flex: 0 0 auto;
 }
+
+.wrapper__block {
+    margin: 32px 0;
+}
+
+.wrapper__color-white {
+    color: var(--color-white);
+}
+
+.wrapper__align-center {
+    text-align: center;
+}
