@@ -13,9 +13,6 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 a:not([class]),
@@ -50,9 +47,4 @@ a[class=""]:active {
 
 .bg-black {
     background-color: var(--color-black);
-}
-
-.my-8 {
-    margin-top: 32px;
-    margin-bottom: 32px;
 }

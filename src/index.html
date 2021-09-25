@@ -9,128 +9,133 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header class="header container">
-            <a href="/" class="logo">Startup</a>
-            <ul class="nav">
-                <li><a href="#home" class="nav__link">Home</a></li>
-                <li><a href="#services" class="nav__link">Services</a></li>
-                <li><a href="#about" class="nav__link">About</a></li>
-                <li><a href="#works" class="nav__link">Works</a></li>
-                <li><a href="#blog" class="nav__link">Blog</a></li>
-                <li><a href="#clients" class="nav__link">Clients</a></li>
-                <li><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
-        </header>
+        <div class="root">
+            <header class="root__header container">
+                <a href="/" class="logo">Startup</a>
+                <ul class="nav">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#works" class="nav__link">Works</a></li>
+                    <li><a href="#blog" class="nav__link">Blog</a></li>
+                    <li><a href="#clients" class="nav__link">Clients</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </header>
 
-        <main class="content">
-            <section
-                id="home"
-                class="section section_first section_fill_dark"
-                style="background-image: url('./images/bg.jpg')"
-            >
-                <div class="container-fluid text-white text-center">
-                    <h1>Welcome to startup</h1>
-                    <div>You favorite creative agency template</div>
-                    <a class="button" href="#services">
-                        <span>Get started</span>
-                        <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10">
-                            <path
-                                d="M433,2659.17a0.32,0.32,0,0,0,.1.23l0.516,0.5a0.357,0.357,0,0,0,.237.1,0.362,0.362,0,0,0,.237-0.1l4.8-4.67a0.308,0.308,0,0,0,0-.46l-4.8-4.67a0.362,0.362,0,0,0-.237-0.1,0.357,0.357,0,0,0-.237.1l-0.516.5a0.308,0.308,0,0,0,0,.46l4.052,3.94-4.052,3.94A0.339,0.339,0,0,0,433,2659.17Z"
-                                transform="translate(-433 -2650)"
-                            />
-                        </svg>
-                    </a>
-                </div>
-            </section>
-
-            <section id="services" class="section">
-                <div class="container text-center">
-                    <h2>Services</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minim</div>
-                    <div>
-                        <div>
-                            <div>A</div>
-                            <div>Clean Typography</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+            <main class="root__content root__content-width-header">
+                <section
+                    id="home"
+                    class="section section_first section_fill_dark"
+                    style="background-image: url('./images/bg.jpg')"
+                >
+                    <div class="container-fluid text-white text-center">
+                        <h1>Welcome to startup</h1>
+                        <div>You favorite creative agency template</div>
+                        <a class="button" href="#services">
+                            <span>Get started</span>
+                            <div class="icon button__icon">
+                                <div class="icon__wrap">
+                                    <svg class="icon__img">
+                                        <use xlink:href="svg/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <div>Картинка №2</div>
-                            <div>Rock Solid Code</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                            </div>
-                        </div>
-                        <div>
-                            <div>Картинка №3</div>
-                            <div>Expert Support</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div id="about" class="section section_bg_gray">
-                <div class="container text-center">About us</div>
-            </div>
-
-            <div id="works" class="section">
-                <div class="container text-center">
-                    <div class="text-white">Works</div>
-                    <div class="work">
-                        <a href="#" class="button button_type_light">
-                            <span>view</span>
-                            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10">
-                                <path
-                                    d="M433,2659.17a0.32,0.32,0,0,0,.1.23l0.516,0.5a0.357,0.357,0,0,0,.237.1,0.362,0.362,0,0,0,.237-0.1l4.8-4.67a0.308,0.308,0,0,0,0-.46l-4.8-4.67a0.362,0.362,0,0,0-.237-0.1,0.357,0.357,0,0,0-.237.1l-0.516.5a0.308,0.308,0,0,0,0,.46l4.052,3.94-4.052,3.94A0.339,0.339,0,0,0,433,2659.17Z"
-                                    transform="translate(-433 -2650)"
-                                />
-                            </svg>
                         </a>
                     </div>
+                </section>
+
+                <section id="services" class="section">
+                    <div class="container text-center">
+                        <h2>Services</h2>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minim</div>
+                        <div>
+                            <div>
+                                <div>A</div>
+                                <div>Clean Typography</div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                                    architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                                </div>
+                            </div>
+                            <div>
+                                <div>Картинка №2</div>
+                                <div>Rock Solid Code</div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                                    architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                                </div>
+                            </div>
+                            <div>
+                                <div>Картинка №3</div>
+                                <div>Expert Support</div>
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                                    architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="about" class="section section_bg_gray">
+                    <div class="container text-center">About us</div>
                 </div>
-            </div>
 
-            <div class="section section_fill_primary" style="background-image: url('./images/bg-2.jpg')">
-                <div class="container-fluid text-white text-center">
-                    <div>Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!</div>
-                    <a href="#contact" class="button">Get in Touch</a>
-                </div>
-            </div>
-
-            <div id="blog" class="section">
-                <div class="container text-center">Recent blog posts</div>
-            </div>
-
-            <div id="clients" class="section section_bg_gray">
-                <div class="container text-center">Clients</div>
-            </div>
-
-            <div id="contact" class="section">
-                <div class="container text-center">
-                    <span>Contact</span>
-                    <br />
-                    <div class="button button_type_form">
-                        <span>Send message</span>
-                        <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10">
-                            <path
-                                d="M433,2659.17a0.32,0.32,0,0,0,.1.23l0.516,0.5a0.357,0.357,0,0,0,.237.1,0.362,0.362,0,0,0,.237-0.1l4.8-4.67a0.308,0.308,0,0,0,0-.46l-4.8-4.67a0.362,0.362,0,0,0-.237-0.1,0.357,0.357,0,0,0-.237.1l-0.516.5a0.308,0.308,0,0,0,0,.46l4.052,3.94-4.052,3.94A0.339,0.339,0,0,0,433,2659.17Z"
-                                transform="translate(-433 -2650)"
-                            />
-                        </svg>
+                <div id="works" class="section">
+                    <div class="container text-center">
+                        <div class="text-white">Works</div>
+                        <div class="work">
+                            <a href="#" class="button button_type_light">
+                                <span>view</span>
+                                <div class="icon button__icon">
+                                    <div class="icon__wrap">
+                                        <svg class="icon__img">
+                                            <use xlink:href="svg/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
 
-        <footer class="footer section section_bg_primary">
-            <div class="container-fluid text-center text-white">© 2015 Startup, Designed by ShapedTheme</div>
-        </footer>
+                <div class="section section_fill_primary" style="background-image: url('./images/bg-2.jpg')">
+                    <div class="container-fluid text-white text-center">
+                        <div>Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!</div>
+                        <a href="#contact" class="button">Get in Touch</a>
+                    </div>
+                </div>
+
+                <div id="blog" class="section">
+                    <div class="container text-center">Recent blog posts</div>
+                </div>
+
+                <div id="clients" class="section section_bg_gray">
+                    <div class="container text-center">Clients</div>
+                </div>
+
+                <div id="contact" class="section">
+                    <div class="container text-center">
+                        <span>Contact</span>
+                        <br />
+                        <div class="button button_type_form">
+                            <span>Send message</span>
+                            <div class="icon button__icon">
+                                <div class="icon__wrap">
+                                    <svg class="icon__img">
+                                        <use xlink:href="svg/sprite.svg#arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="root__footer section section_bg_primary">
+                <div class="container-fluid text-center text-white">© 2015 Startup, Designed by ShapedTheme</div>
+            </footer>
+        </div>
     </body>
 </html>
