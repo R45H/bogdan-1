@@ -7,9 +7,6 @@
 .root__header {
     flex: 0 0 auto;
     height: var(--header-height);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     z-index: 1;
 }
 
@@ -17,11 +14,11 @@
     flex: 1 0 auto;
 }
 
-.root__content-width-header {
+.root__content-with-header {
     margin-top: calc(-1 * var(--header-height));
 }
 
-.root__section-width-header {
+.root__section-with-header {
     padding-top: calc(100px + var(--header-height));
 }
 
@@ -31,6 +28,10 @@
 
 .root__text-align-center {
     text-align: center;
+}
+
+.root__text-white {
+    color: var(--color-white);
 }
 
 .root__block {

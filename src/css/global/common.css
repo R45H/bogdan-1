@@ -34,17 +34,3 @@ a:not([class]):active,
 a[class=""]:active {
     color: var(--color-primary-active);
 }
-
-/* Helpers */
-
-.text-white {
-    color: var(--color-white);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.bg-black {
-    background-color: var(--color-black);
-}
