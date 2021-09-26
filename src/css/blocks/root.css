@@ -35,6 +35,5 @@
 }
 
 .root__block {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
