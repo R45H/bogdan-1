@@ -1,0 +1,28 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__icon {
+    padding: 20px;
+    width: 90px;
+    fill: var(--color-primary);
+    transition: var(--transition);
+}
+
+.services__icon:hover {
+    background-color: var(--color-primary);
+    fill: var(--color-white);
+}
+
+.services__icon_radius {
+    border: 2px solid var(--color-gray-light);
+    border-radius: 50%;
+}

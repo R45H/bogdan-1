@@ -145,4 +145,8 @@
             H8.979V3.749h17.042V30.625z"
         />
     </symbol>
+
+    <symbol id="line" viewBox="0 0 50 2">
+        <path d="M775,916v-2h50v2H775" transform="translate(-775 -914)" />
+    </symbol>
 </svg>
