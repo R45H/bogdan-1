@@ -3,7 +3,3 @@
     align-items: flex-end;
     justify-content: space-between;
 }
-
-.header__subtitle {
-    text-transform: capitalize;
-}
