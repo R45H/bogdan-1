@@ -42,7 +42,7 @@ input.button {
 
 .button__icon {
     flex: none;
-    height: 12px;
+    width: 10px;
     margin-left: 12px;
 }
 
@@ -55,7 +55,7 @@ input.button {
 }
 
 .button_type_light .button__icon {
-    height: 7px;
+    width: 7px;
     margin-left: 8px;
 }
 
@@ -67,7 +67,7 @@ input.button {
 }
 
 .button_type_form .button__icon {
-    height: 7px;
+    width: 7px;
 }
 
 .button_type_form:hover {

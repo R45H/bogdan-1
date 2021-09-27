@@ -2,15 +2,15 @@
 @import "global/index.css";
 
 /* Blocks */
-@import "blocks/header.css";
 @import "blocks/logo.css";
 @import "blocks/title.css";
 @import "blocks/subtitle.css";
 @import "blocks/nav.css";
+@import "blocks/header.css";
 @import "blocks/link.css";
-@import "blocks/content.css";
-@import "blocks/footer.css";
 @import "blocks/button.css";
 @import "blocks/section.css";
+@import "blocks/root.css";
 @import "blocks/block.css";
 @import "blocks/social.css";
+@import "blocks/icon.css";
