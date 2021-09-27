@@ -4,16 +4,26 @@
     "license": "MIT",
     "devDependencies": {
         "@prettier/plugin-xml": "^1.0.2",
+        "browser-sync": "^2.27.5",
+        "bs-html-injector": "^3.0.3",
         "husky": "^7.0.1",
         "lint-staged": "^11.1.2",
+        "node-sass": "^6.0.1",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0",
         "prettier": "^2.3.2"
     },
     "scripts": {
-        "format": "prettier src/**/*.{html,css,svg} --write",
+        "clean": "rm -rf ./dist",
+        "scss:build": "node-sass ./src/css/style.scss -o ./dist/css --output-style expanded --indent-width 4 --source-map-root file://${PWD}/ --source-map-embed true",
+        "scss:watch": "onchange \"./src/css/**/*.scss\" -- yarn run scss:build",
+        "serve": "node server.js",
+        "start": "run-s clean scss:build && run-p scss:watch serve",
+        "format": "prettier \"./src/**/*.{html,css,scss,svg}\" --write",
         "prepare": "husky install"
     },
     "lint-staged": {
-        "*.{html,css,svg}": [
+        "*.{html,css,scss,svg}": [
             "prettier --write"
         ]
     }

@@ -1,0 +1,31 @@
+$color-bg: #25cc78;
+
+%transition {
+    transition: 0.3s ease;
+}
+
+.test {
+    @extend %transition;
+    background-color: $color-bg;
+    padding: 8px;
+
+    &:hover {
+        background-color: darken($color-bg, 5%);
+    }
+
+    &__elem {
+        @extend %transition;
+        background-color: lighten($color-bg, 10%);
+        background-clip: content-box;
+        padding: 8px;
+        height: 100px;
+
+        &:hover {
+            background-color: darken($color-bg, 15%);
+        }
+
+        &:active {
+            background-color: darken($color-bg, 20%);
+        }
+    }
+}
