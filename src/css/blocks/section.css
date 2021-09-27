@@ -24,7 +24,7 @@
 
 .section_fill_primary::before,
 .section_fill_dark::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;

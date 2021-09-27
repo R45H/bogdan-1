@@ -1,6 +1,6 @@
 :root {
-    --font-primary: "Roboto Slab", serif;
-    --font-secondary: "Montserrat", sans-serif;
+    --font-primary: 'Roboto Slab', serif;
+    --font-secondary: 'Montserrat', sans-serif;
     --color-primary: #c0301c;
     --color-primary-active: #802013;
     --color-text: #555;

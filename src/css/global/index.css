@@ -1,4 +1,4 @@
-@import "fonts.css"; /* Шрифты */
-@import "variables.css"; /* Переменные */
-@import "common.css"; /* Общие */
-@import "grid.css"; /* Сетка */
+@import 'fonts.css'; /* Шрифты */
+@import 'variables.css'; /* Переменные */
+@import 'common.css'; /* Общие */
+@import 'grid.css'; /* Сетка */
