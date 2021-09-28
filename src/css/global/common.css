@@ -16,7 +16,7 @@ body {
 }
 
 a:not([class]),
-a[class=""] {
+a[class=''] {
     text-decoration: none;
     color: var(--color-text);
     border-bottom: 1px solid currentColor;
@@ -24,13 +24,13 @@ a[class=""] {
 }
 
 a:not([class]):hover,
-a[class=""]:hover,
+a[class='']:hover,
 a:not([class]):focus,
-a[class=""]:focus {
+a[class='']:focus {
     color: var(--color-primary);
 }
 
 a:not([class]):active,
-a[class=""]:active {
+a[class='']:active {
     color: var(--color-primary-active);
 }
