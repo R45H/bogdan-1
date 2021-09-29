@@ -1,8 +1,8 @@
 .link {
+    @extend %transition;
     text-decoration: none;
     color: $color-text;
     border-bottom: 1px solid currentColor;
-    transition: $transition;
 
     &:hover,
     &:focus {

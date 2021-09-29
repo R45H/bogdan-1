@@ -17,10 +17,10 @@ body {
 
 a:not([class]),
 a[class=''] {
+    @extend %transition;
     text-decoration: none;
     color: $color-text;
     border-bottom: 1px solid currentColor;
-    transition: $transition;
 }
 
 a:not([class]):hover,

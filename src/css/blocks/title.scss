@@ -5,14 +5,14 @@
     font-weight: normal;
     text-transform: uppercase;
     line-height: 1.2;
-}
 
-.title_size_lg {
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
+    &_size_lg {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
 
-.title_size_sm {
-    font-size: 14px;
+    &_size_sm {
+        font-size: 14px;
+    }
 }

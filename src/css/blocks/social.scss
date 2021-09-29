@@ -1,65 +1,67 @@
-.social__wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.social__link {
-    padding: 6px;
-    width: 28px;
-    height: 28px;
-    transition: $transition;
-    fill: $color-white;
-
-    &:hover {
-        background-color: $color-primary;
+.social {
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    &:active {
-        background-color: $color-primary-active;
+    &__link {
+        @extend %transition;
+        padding: 6px;
+        width: 28px;
+        height: 28px;
+        fill: $color-white;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+        &:active {
+            background-color: $color-primary-active;
+        }
     }
-}
 
-.social__link_color_fb:hover {
-    background-color: $color-fb;
-}
+    &__link_color_fb:hover {
+        background-color: $color-fb;
+    }
 
-.social__link_color_fb:active {
-    background-color: $color-fb-active;
-}
+    &__link_color_fb:active {
+        background-color: $color-fb-active;
+    }
 
-.social__link_color_tw:hover {
-    background-color: $color-tw;
-}
+    &__link_color_tw:hover {
+        background-color: $color-tw;
+    }
 
-.social__link_color_tw:active {
-    background-color: $color-tw-active;
-}
+    &__link_color_tw:active {
+        background-color: $color-tw-active;
+    }
 
-.social__link_color_gp:hover {
-    background-color: $color-gp;
-}
+    &__link_color_gp:hover {
+        background-color: $color-gp;
+    }
 
-.social__link_color_gp:active {
-    background-color: $color-gp-active;
-}
+    &__link_color_gp:active {
+        background-color: $color-gp-active;
+    }
 
-.social__link_color_linkedin:hover {
-    background-color: $color-linkedin;
-}
+    &__link_color_linkedin:hover {
+        background-color: $color-linkedin;
+    }
 
-.social__link_color_linkedin:active {
-    background-color: $color-linkedin-active;
-}
+    &__link_color_linkedin:active {
+        background-color: $color-linkedin-active;
+    }
 
-.social_alternative .social__wrap {
-    margin: -8px;
-}
+    &_alternative &__wrap {
+        margin: -8px;
+    }
 
-.social_alternative .social__link {
-    padding: 8px;
-    margin: 8px;
-    width: 35px;
-    height: 35px;
-    border: 2px solid $color-white;
-    border-radius: 50%;
+    &_alternative &__link {
+        padding: 8px;
+        margin: 8px;
+        width: 35px;
+        height: 35px;
+        border: 2px solid $color-white;
+        border-radius: 50%;
+    }
 }

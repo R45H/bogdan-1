@@ -1,21 +1,23 @@
 $font-primary: 'Roboto Slab', serif;
 $font-secondary: 'Montserrat', sans-serif;
 $color-primary: #c0301c;
-$color-primary-active: #802013;
+$color-primary-active: darken($color-primary, 10%);
 $color-text: #555;
-$color-text-active: #3d3d3d;
+$color-text-active: darken($color-text, 10%);
 $color-gray: #f8f8f8;
 $color-white: #fff;
-$color-white-darker: #ccc;
-$color-white-darkest: #999;
+$color-white-darker: darken($color-white, 10%);
+$color-white-darkest: darken($color-white, 20%);
 $color-black: #000;
 $color-fb: #1877f2;
-$color-fb-active: #0f59bf;
+$color-fb-active: darken($color-fb, 10%);
 $color-tw: #1da1f2;
-$color-tw-active: #1d76bf;
+$color-tw-active: darken($color-tw, 10%);
 $color-gp: #db4437;
-$color-gp-active: #a8352a;
+$color-gp-active: darken($color-gp, 10%);
 $color-linkedin: #0a66c2;
-$color-linkedin-active: #0a4c8f;
-$header-height: 72px;
-$transition: 0.3s ease;
+$color-linkedin-active: darken($color-linkedin, 10%);
+
+%transition {
+    transition: 0.3s ease;
+}

@@ -3,25 +3,25 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
 
-.nav__link {
-    display: block;
-    outline: none;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: $color-white;
-    transition: $transition;
-    border-bottom: 2px solid transparent;
+    &__link {
+        @extend %transition;
+        display: block;
+        outline: none;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: $color-white;
+        border-bottom: 2px solid transparent;
 
-    &:hover,
-    &:focus {
-        color: $color-white-darker;
-        border-bottom-color: currentColor;
-    }
+        &:hover,
+        &:focus {
+            color: $color-white-darker;
+            border-bottom-color: currentColor;
+        }
 
-    &:active {
-        color: $color-white-darkest;
-        border-bottom-color: currentColor;
+        &:active {
+            color: $color-white-darkest;
+            border-bottom-color: currentColor;
+        }
     }
 }

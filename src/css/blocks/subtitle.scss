@@ -2,12 +2,11 @@
     margin: 0;
     font-size: 16px;
     font-weight: normal;
-}
 
-.subtitle_size_lg {
-    font-size: 20px;
-}
-
-.subtitle_size_xl {
-    font-size: 30px;
+    &_size_lg {
+        font-size: 20px;
+    }
+    &_size_xl {
+        font-size: 30px;
+    }
 }
