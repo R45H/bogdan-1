@@ -1,0 +1,15 @@
+.link {
+    text-decoration: none;
+    color: $color-text;
+    border-bottom: 1px solid currentColor;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary-active;
+    }
+}

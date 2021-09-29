@@ -1,0 +1,20 @@
+.logo {
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: $color-white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    user-select: none;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: $color-white-darker;
+    }
+
+    &:active {
+        color: $color-white-darkest;
+    }
+}

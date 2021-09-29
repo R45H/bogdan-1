@@ -7,48 +7,48 @@
     padding: 6px;
     width: 28px;
     height: 28px;
-    transition: var(--transition);
-    fill: var(--color-white);
-}
+    transition: $transition;
+    fill: $color-white;
 
-.social__link:hover {
-    background-color: var(--color-primary);
-}
+    &:hover {
+        background-color: $color-primary;
+    }
 
-.social__link:active {
-    background-color: var(--color-primary-active);
+    &:active {
+        background-color: $color-primary-active;
+    }
 }
 
 .social__link_color_fb:hover {
-    background-color: var(--color-fb);
+    background-color: $color-fb;
 }
 
 .social__link_color_fb:active {
-    background-color: var(--color-fb-active);
+    background-color: $color-fb-active;
 }
 
 .social__link_color_tw:hover {
-    background-color: var(--color-tw);
+    background-color: $color-tw;
 }
 
 .social__link_color_tw:active {
-    background-color: var(--color-tw-active);
+    background-color: $color-tw-active;
 }
 
 .social__link_color_gp:hover {
-    background-color: var(--color-gp);
+    background-color: $color-gp;
 }
 
 .social__link_color_gp:active {
-    background-color: var(--color-gp-active);
+    background-color: $color-gp-active;
 }
 
 .social__link_color_linkedin:hover {
-    background-color: var(--color-linkedin);
+    background-color: $color-linkedin;
 }
 
 .social__link_color_linkedin:active {
-    background-color: var(--color-linkedin-active);
+    background-color: $color-linkedin-active;
 }
 
 .social_alternative .social__wrap {
@@ -60,6 +60,6 @@
     margin: 8px;
     width: 35px;
     height: 35px;
-    border: 2px solid var(--color-white);
+    border: 2px solid $color-white;
     border-radius: 50%;
 }

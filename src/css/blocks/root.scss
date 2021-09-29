@@ -6,7 +6,7 @@
 
 .root__header {
     flex: 0 0 auto;
-    height: var(--header-height);
+    height: $header-height;
     z-index: 1;
 }
 
@@ -15,11 +15,11 @@
 }
 
 .root__content-with-header {
-    margin-top: calc(-1 * var(--header-height));
+    margin-top: calc(-1 * #{$header-height});
 }
 
 .root__section-with-header {
-    padding-top: calc(100px + var(--header-height));
+    padding-top: calc(100px + #{$header-height});
 }
 
 .root__footer {
@@ -31,7 +31,7 @@
 }
 
 .root__text-white {
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .root__block {
