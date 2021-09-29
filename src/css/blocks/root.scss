@@ -1,5 +1,5 @@
 $header-height: 72px;
-$content-margin-top: -1 * $header-height;
+$content-margin-top: -$header-height;
 $section-padding-top: 100px + $header-height;
 
 .root {

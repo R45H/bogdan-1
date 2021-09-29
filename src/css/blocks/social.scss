@@ -1,3 +1,12 @@
+$color-fb: #1877f2;
+$color-fb-active: darken($color-fb, 10%);
+$color-tw: #1da1f2;
+$color-tw-active: darken($color-tw, 10%);
+$color-gp: #db4437;
+$color-gp-active: darken($color-gp, 10%);
+$color-linkedin: #0a66c2;
+$color-linkedin-active: darken($color-linkedin, 10%);
+
 .social {
     &__wrap {
         display: flex;
@@ -18,38 +27,38 @@
         &:active {
             background-color: $color-primary-active;
         }
-    }
 
-    &__link_color_fb:hover {
-        background-color: $color-fb;
-    }
+        &_color_fb:hover {
+            background-color: $color-fb;
+        }
 
-    &__link_color_fb:active {
-        background-color: $color-fb-active;
-    }
+        &_color_fb:active {
+            background-color: $color-fb-active;
+        }
 
-    &__link_color_tw:hover {
-        background-color: $color-tw;
-    }
+        &_color_tw:hover {
+            background-color: $color-tw;
+        }
 
-    &__link_color_tw:active {
-        background-color: $color-tw-active;
-    }
+        &_color_tw:active {
+            background-color: $color-tw-active;
+        }
 
-    &__link_color_gp:hover {
-        background-color: $color-gp;
-    }
+        &_color_gp:hover {
+            background-color: $color-gp;
+        }
 
-    &__link_color_gp:active {
-        background-color: $color-gp-active;
-    }
+        &_color_gp:active {
+            background-color: $color-gp-active;
+        }
 
-    &__link_color_linkedin:hover {
-        background-color: $color-linkedin;
-    }
+        &_color_linkedin:hover {
+            background-color: $color-linkedin;
+        }
 
-    &__link_color_linkedin:active {
-        background-color: $color-linkedin-active;
+        &_color_linkedin:active {
+            background-color: $color-linkedin-active;
+        }
     }
 
     &_alternative &__wrap {

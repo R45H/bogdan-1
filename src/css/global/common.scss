@@ -21,16 +21,13 @@ a[class=''] {
     text-decoration: none;
     color: $color-text;
     border-bottom: 1px solid currentColor;
-}
 
-a:not([class]):hover,
-a[class='']:hover,
-a:not([class]):focus,
-a[class='']:focus {
-    color: $color-primary;
-}
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
 
-a:not([class]):active,
-a[class='']:active {
-    color: $color-primary-active;
+    &:active {
+        color: $color-primary-active;
+    }
 }
