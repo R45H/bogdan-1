@@ -1,0 +1,42 @@
+.section {
+    padding: 100px 0;
+    background: no-repeat center / cover;
+
+    &_first {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    &_bg_primary {
+        background-color: $color-primary;
+    }
+
+    &_bg_gray {
+        background-color: $color-gray;
+    }
+
+    &_fill_primary,
+    &_fill_dark {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_fill_primary::before {
+        background-color: $color-primary;
+        opacity: 0.6;
+    }
+
+    &_fill_dark::before {
+        background-color: $color-black;
+        opacity: 0.45;
+    }
+}

@@ -1,0 +1,18 @@
+.title {
+    margin: 0;
+    font-family: $font-secondary;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    &_size_lg {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+
+    &_size_sm {
+        font-size: 14px;
+    }
+}

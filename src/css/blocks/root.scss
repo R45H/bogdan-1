@@ -1,0 +1,43 @@
+$header-height: 72px;
+$content-margin-top: -$header-height;
+$section-padding-top: 100px + $header-height;
+
+.root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    &__header {
+        flex: 0 0 auto;
+        height: $header-height;
+        z-index: 1;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+    }
+
+    &__content-with-header {
+        margin-top: $content-margin-top;
+    }
+
+    &__section-with-header {
+        padding-top: $section-padding-top;
+    }
+
+    &__footer {
+        flex: 0 0 auto;
+    }
+
+    &__text-align-center {
+        text-align: center;
+    }
+
+    &__text-white {
+        color: $color-white;
+    }
+
+    &__block {
+        margin: 32px 0;
+    }
+}

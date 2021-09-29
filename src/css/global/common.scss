@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $color-text;
+}
+
+a:not([class]),
+a[class=''] {
+    @extend %transition;
+    text-decoration: none;
+    color: $color-text;
+    border-bottom: 1px solid currentColor;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary-active;
+    }
+}
