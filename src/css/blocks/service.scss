@@ -1,8 +1,8 @@
-.services {
-    margin: 0;
+.service {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     &__icon {
         @extend %transition;
@@ -13,14 +13,14 @@
         fill: $color-primary;
         background-color: $color-white;
         margin-bottom: 30px;
-
-        &:hover {
-            fill: $color-white;
-            background-color: $color-primary;
-        }
     }
 
-    &__title_margin {
+    &:hover &__icon {
+        fill: $color-white;
+        background-color: $color-primary;
+    }
+
+    &__title {
         margin-bottom: 20px;
     }
 }
