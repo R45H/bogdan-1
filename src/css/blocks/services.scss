@@ -1,0 +1,26 @@
+.services {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        @extend %transition;
+        width: 90px;
+        padding: 15px;
+        border-radius: 50%;
+        border: 2px solid darken($color-gray, 10%);
+        fill: $color-primary;
+        background-color: $color-white;
+        margin-bottom: 30px;
+
+        &:hover {
+            fill: $color-white;
+            background-color: $color-primary;
+        }
+    }
+
+    &__title_margin {
+        margin-bottom: 20px;
+    }
+}
