@@ -1,0 +1,34 @@
+.about {
+    &__row {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    &__img {
+        @extend %transition;
+
+        & img {
+            width: 100%;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+}
