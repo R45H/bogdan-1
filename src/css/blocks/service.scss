@@ -1,0 +1,23 @@
+.service {
+    text-align: center;
+
+    &__icon {
+        @extend %transition;
+        width: 90px;
+        padding: 20px;
+        border-radius: 50%;
+        border: 2px solid darken($color-gray, 10%);
+        fill: $color-primary;
+        background-color: $color-white;
+        margin: 0 auto 28px;
+    }
+
+    &:hover &__icon {
+        fill: $color-white;
+        background-color: $color-primary;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}
