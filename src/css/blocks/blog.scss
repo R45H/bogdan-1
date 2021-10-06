@@ -1,73 +1,60 @@
 .blog {
-    &__wrap {
-        position: relative;
+    &__img {
         padding-top: 75%;
+        background: no-repeat center / cover;
     }
 
-    &__img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: no-repeat top / cover;
+    &__info {
+        display: flex;
     }
 
     &__border {
-        position: relative;
         font-family: $font-secondary;
-        font-weight: bold;
-        text-align: center;
         border: 2px solid $color-text;
-        padding-bottom: 100%;
+        height: 72px;
+        width: 72px;
     }
 
     &__date {
-        text-transform: uppercase;
-        position: absolute;
-        font-size: 14px;
-        padding: 10%;
-        overflow: hidden;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        text-align: center;
         height: 100%;
-        top: 0;
-        left: 0;
 
-        & span {
+        &-day {
             font-size: 24px;
+        }
+
+        &-month {
+            font-size: 14px;
         }
     }
 
     &__inner {
-        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 28px;
     }
 
     &__title {
-        @extend %transition;
+        font-weight: bold;
         font-size: 16px;
-
-        &:hover {
-            color: $color-primary;
-        }
     }
 
     &__subtitle {
-        margin-top: 20px;
         font-style: italic;
     }
 
     &__text {
         margin-top: 24px;
-        margin-bottom: 20px;
     }
 
     &__link {
-        border: none;
-
-        &_next {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 13px;
-        }
+        margin-top: 34px;
+        font-weight: bold;
+        font-size: 13px;
     }
 }
