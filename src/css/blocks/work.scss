@@ -17,6 +17,8 @@
         top: 0;
         left: 0;
         object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 
     &__inner {
@@ -24,6 +26,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -35,7 +38,7 @@
     }
 
     &__subtitle {
-        padding-top: 8px;
+        margin-top: 8px;
     }
 
     &__button {
