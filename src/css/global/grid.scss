@@ -1,3 +1,6 @@
+$gap: 16px;
+$columns: 12;
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -6,85 +9,30 @@
 .container,
 .container-fluid {
     width: 100%;
-    padding: 0 16px;
+    padding: 0 $gap;
     position: relative;
 }
 
 .row {
-    margin: -16px;
+    margin: -$gap;
     display: flex;
     flex-wrap: wrap;
 }
 
-.col,
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12,
-.col-auto {
-    padding: 16px;
+[class|='col'] {
+    padding: $gap;
 }
 
 .col {
     flex: 1 0;
 }
 
-.col-1 {
-    width: 8.333333%;
-}
-
-.col-2 {
-    width: 16.666666%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.333333%;
-}
-
-.col-5 {
-    width: 41.666666%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.333333%;
-}
-
-.col-8 {
-    width: 66.666666%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.333333%;
-}
-
-.col-11 {
-    width: 91.666666%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
 .col-auto {
     width: auto;
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: 100% / $columns * $i;
+    }
 }
