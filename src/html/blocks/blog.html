@@ -1,0 +1,29 @@
+<div class="blog">
+    <div class="row">
+        <div class="col-5">
+            <div class="blog__img" style="background-image: url('@img.url')" role="img" aria-label="@img.alt"></div>
+        </div>
+
+        <div class="col-7">
+            <div class="blog__info">
+                <div class="blog__date">
+                    <div class="blog__date-day">@date.day</div>
+                    <div class="blog__date-month">@date.month</div>
+                </div>
+
+                <div class="blog__inner">
+                    <a href="#" class="title title_size_sm link">@title</a>
+                    <div class="subtitle subtitle_size_sm blog__subtitle">
+                        By <a href="#">@author</a> in <a href="#">@category</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog__text">@text</div>
+
+            <div class="blog__link">
+                <a href="#">read more</a>
+            </div>
+        </div>
+    </div>
+</div>
