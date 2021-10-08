@@ -20,7 +20,7 @@
 - [x] Карточка в services
 - [x] Карточка в about
 - [x] Карточка в works
-- [ ] Карточка в blog
+- [x] Карточка в blog
 - [ ] Секция clients
 - [ ] Полоска под заголовком
 - [ ] Input + textarea
