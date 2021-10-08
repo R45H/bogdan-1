@@ -6,7 +6,7 @@
 
     &__info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
 
     &__date {
@@ -33,6 +33,7 @@
     &__inner {
         flex: 1 0;
         margin-left: 24px;
+        align-self: center;
     }
 
     &__subtitle {
