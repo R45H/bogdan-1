@@ -243,6 +243,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Work</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!-- prettier-ignore -->
+                                    @include('./blocks/work.html', {
+                                        img: {
+                                            url: '@webRoot/images/work/work-1.jpg',
+                                            alt: 'work-1',
+                                        },
+                                        title: 'Hair Dresser',
+                                        subtitle: 'Branding',
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </body>

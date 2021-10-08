@@ -1,0 +1,16 @@
+<div class="work">
+    <div class="work__wrap">
+        <img class="work__img" src="@img.url" alt="@img.alt" />
+
+        <div class="work__inner">
+            <div class="subtitle subtitle_size_lg">@title</div>
+
+            <div class="subtitle subtitle_size_xs work__subtitle">@subtitle</div>
+
+            <a href="#" class="button button_type_light work__button">
+                <span>view</span>
+                @include('./icon.html', { classes: 'button__icon', name: 'arrow' })
+            </a>
+        </div>
+    </div>
+</div>
