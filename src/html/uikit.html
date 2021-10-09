@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        @include('./partials/head.html', { title: 'Uikit' })
+    </head>
+    <body class="root">
+        <main class="root__content">
+            <div class="container">
+                <div class="block root__block">
+                    <div class="block__name">Текст</div>
+
+                    <div class="block__body">
+                        <div class="block__item">
+                            <p>
+                                Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>. Accusantium
+                                alias eius ex laboriosam magni pariatur reprehenderit suscipit veniam vitae
+                                voluptatibus? A consequuntur iusto labore laborum minima optio sapiente sit voluptates.
+                            </p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci at atque dolorem
+                                doloribus et eveniet fugit in inventore, molestias nam nesciunt numquam provident
+                                repellendus rerum sapiente similique tempora totam.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum distinctio
+                                    error iure iusto minus officia quia recusandae.
+                                    <a href="#">Beatae corporis ea harum itaque</a>
+                                    molestiae molestias.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, fuga placeat!
+                                    Adipisci autem distinctio eligendi repellendus saepe. A autem consequatur delectus
+                                    hic minus obcaecati?
+                                </li>
+                            </ul>
+
+                            <ol>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum distinctio
+                                    error iure iusto minus officia quia recusandae.
+                                    <a href="#">Beatae corporis ea harum itaque</a>
+                                    molestiae molestias.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, fuga placeat!
+                                    Adipisci autem distinctio eligendi repellendus saepe. A autem consequatur delectus
+                                    hic minus obcaecati?
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Иконки (спрайт)</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="row">
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'fb' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'tw' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'gp' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'linkedin' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'arrow' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'code' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'mail' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'a' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'point' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'smartphone' })</div>
+                                <div class="col-1">@include('./blocks/icon.html', { name: 'lifebuoy' })</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Логотип</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_dark">
+                            <a href="/" class="logo">.logo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Кнопка</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_dark">
+                            <div class="button">.button</div>
+                        </div>
+
+                        <div class="block__item block__item_dark">
+                            <a class="button" href="#">a.button</a>
+                        </div>
+
+                        <div class="block__item block__item_dark">
+                            <input class="button" type="button" value="input.button[type='button']" />
+                        </div>
+
+                        <div class="block__item block__item_dark">
+                            <button class="button">button.button</button>
+                        </div>
+
+                        <div class="block__item block__item_dark">
+                            <div class="button">
+                                <span>.button</span>
+                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                            </div>
+                        </div>
+
+                        <div class="block__item block__item_dark">
+                            <div class="button button_type_light">
+                                <span>.button.button_type_light</span>
+                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                            </div>
+                        </div>
+
+                        <div class="block__item">
+                            <div class="button button_type_form">
+                                <span>.button.button_type_form</span>
+                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Ссылка</div>
+
+                    <div class="block__body">
+                        <div class="block__item">
+                            <a href="#" class="link">a.link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Заголовки</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="title">.title</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="title title_size_lg">.title.title_size_lg</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="title title_size_sm">.title.title_size_sm</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Подзаголовки</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="subtitle">.subtitle</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="subtitle subtitle_size_xs">.subtitle.subtitle_size_xs</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="subtitle subtitle_size_sm">.subtitle.subtitle_size_sm</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="subtitle subtitle_size_lg">.subtitle.subtitle_size_lg</div>
+                        </div>
+
+                        <div class="block__item block__item_wide">
+                            <div class="subtitle subtitle_size_xl">.subtitle.subtitle_size_xl</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Меню</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_dark block__item_wide">@include('./blocks/nav.html')</div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Социальные иконки</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_dark">@include('./blocks/social.html')</div>
+
+                        <div class="block__item block__item_dark">
+                            @include('./blocks/social.html', { classes: 'social_alternative' })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Service</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!-- prettier-ignore -->
+                                    @include('./blocks/service.html', {
+                                        iconName: 'a',
+                                        title: 'Clean typography',
+                                        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">About</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="row">
+                                <div class="col-3">
+                                    <!-- prettier-ignore -->
+                                    @include('./blocks/about.html', {
+                                        img: {
+                                            url: '@webRoot/images/face/face_1.jpg',
+                                            alt: 'face-1',
+                                        },
+                                        title: 'Md. Khalil Uddin',
+                                        subtitle: 'Head of Ideas',
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Work</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!-- prettier-ignore -->
+                                    @include('./blocks/work.html', {
+                                        img: {
+                                            url: '@webRoot/images/work/work-1.jpg',
+                                            alt: 'work-1',
+                                        },
+                                        title: 'Hair Dresser',
+                                        subtitle: 'Branding',
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block root__block">
+                    <div class="block__name">Blog</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/blog.html', {
+                                img: {
+                                    url: '@webRoot/images/blog/blog-1.jpg',
+                                    alt: 'blog-1',
+                                },
+                                date: {
+                                    day: '18',
+                                    month: 'OCT',
+                                },
+                                title: 'Startup ideas needs to be funded',
+                                author: 'Khalil Uddin',
+                                category: 'Development',
+                                text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
