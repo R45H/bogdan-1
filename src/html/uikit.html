@@ -6,6 +6,7 @@
     <body class="root">
         <main class="root__content">
             <div class="container">
+                <!-- Текст -->
                 <div class="block root__block">
                     <div class="block__name">Текст</div>
 
@@ -53,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Иконки (Спрайт) -->
                 <div class="block root__block">
                     <div class="block__name">Иконки (спрайт)</div>
 
@@ -75,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Логотип -->
                 <div class="block root__block">
                     <div class="block__name">Логотип</div>
 
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Кнопка -->
                 <div class="block root__block">
                     <div class="block__name">Кнопка</div>
 
@@ -128,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Ссылка -->
                 <div class="block root__block">
                     <div class="block__name">Ссылка</div>
 
@@ -138,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Заголовки -->
                 <div class="block root__block">
                     <div class="block__name">Заголовки</div>
 
@@ -156,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Подзаголоки -->
                 <div class="block root__block">
                     <div class="block__name">Подзаголовки</div>
 
@@ -182,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Меню -->
                 <div class="block root__block">
                     <div class="block__name">Меню</div>
 
@@ -190,7 +191,7 @@
                         <div class="block__item block__item_dark block__item_wide">@include('./blocks/nav.html')</div>
                     </div>
                 </div>
-
+                <!-- Социальные иконки -->
                 <div class="block root__block">
                     <div class="block__name">Социальные иконки</div>
 
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Блок services -->
                 <div class="block root__block">
                     <div class="block__name">Service</div>
 
@@ -221,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Блок About -->
                 <div class="block root__block">
                     <div class="block__name">About</div>
 
@@ -243,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Блок Work -->
                 <div class="block root__block">
                     <div class="block__name">Work</div>
 
@@ -265,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Блок Blog -->
                 <div class="block root__block">
                     <div class="block__name">Blog</div>
 
@@ -285,6 +286,40 @@
                                 author: 'Khalil Uddin',
                                 category: 'Development',
                                 text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                            })
+                        </div>
+                    </div>
+                </div>
+                <!-- Блок Client -->
+                <div class="block root__block">
+                    <div class="block__name">Client</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/client.html', {
+                            img_1: {
+                            url: '@webRoot/images/clients/cl-1.png',
+                            alt: 'cl-1',
+                            },
+                            img_2: {
+                            url: '@webRoot/images/clients/cl-2.png',
+                            alt: 'cl-2',
+                            },
+                            img_3: {
+                            url: '@webRoot/images/clients/cl-3.png',
+                            alt: 'cl-3',
+                            },
+                            img_4: {
+                            url: '@webRoot/images/clients/cl-4.png',
+                            alt: 'cl-4',
+                            },
+                            img_5: {
+                            url: '@webRoot/images/clients/cl-5.png',
+                            alt: 'cl-5',
+                            },
+                            review: '"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”',
+                            review_user: 'John Doe, Google Inc.',
                             })
                         </div>
                     </div>
