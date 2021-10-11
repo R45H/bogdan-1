@@ -1,0 +1,29 @@
+.clients {
+    text-align: center;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__img-wrap {
+        padding: 0 36px;
+    }
+
+    &__review {
+        max-width: 80%;
+    }
+
+    &__quote-text {
+        margin-top: 36px;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    &__quote-author {
+        margin-top: 36px;
+        font-size: 20px;
+    }
+}
