@@ -2,6 +2,23 @@
     "name": "bogdan-1",
     "version": "1.0.0",
     "license": "MIT",
+    "author": {
+        "name": "Bogdan Doretskiy",
+        "email": "workbd@bk.ru",
+        "url": "https://github.com/Lazard-Live"
+    },
+    "maintainers": [
+        {
+            "name": "Bogdan Doretskiy",
+            "email": "workbd@bk.ru",
+            "url": "https://github.com/Lazard-Live"
+        },
+        {
+            "name": "Oleg Redkin",
+            "email": "gmr45h@gmail.com",
+            "url": "https://github.com/R45H"
+        }
+    ],
     "devDependencies": {
         "@prettier/plugin-xml": "^1.0.2",
         "@types/browser-sync": "^2.26.2",
