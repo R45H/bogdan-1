@@ -1,0 +1,30 @@
+.clients {
+    text-align: center;
+
+    &__img-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        padding: 4px 18px;
+    }
+
+    &__quote {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    &__quote-text {
+        margin-top: 32px;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    &__quote-author {
+        margin-top: 36px;
+        font-size: 20px;
+    }
+}
