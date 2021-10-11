@@ -9,15 +9,21 @@
     }
 
     &__img-wrap {
-        padding: 0 36px;
+        padding: 4px 36px;
     }
 
-    &__review {
-        max-width: 80%;
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__quote-wrap {
+        max-width: 70%;
     }
 
     &__quote-text {
-        margin-top: 36px;
+        margin-top: 32px;
         font-size: 18px;
         font-style: italic;
     }
