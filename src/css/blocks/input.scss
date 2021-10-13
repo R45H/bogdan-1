@@ -1,27 +1,38 @@
 .input {
+    @extend %transition;
     height: 44px;
+
+    &:hover,
+    &:active {
+        border-color: $color-primary;
+    }
+
+    &:focus {
+        border-color: $color-primary-active;
+    }
+
+    &::-webkit-input-placeholder {
+        @extend %transition;
+        color: lighten($color-text, 30%);
+    }
+
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+    }
 }
 
 textarea.input {
-    resize: none;
-    height: 104px;
+    resize: vertical;
+    min-height: 104px;
 }
 
 .input,
 textarea.input {
-    @extend %transition;
+    color: $color-text;
     font-size: 12px;
-    padding: 16px;
+    line-height: 1.5;
+    padding: 12px 16px;
     width: 100%;
     outline: none;
     border: 1px solid $color-text;
-
-    &:hover,
-    &:active {
-        border-color: $color-primary-active;
-    }
-
-    &:focus {
-        border-color: $color-primary;
-    }
 }
