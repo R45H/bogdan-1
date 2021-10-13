@@ -2,19 +2,24 @@
     height: 44px;
 }
 
-.textarea {
+textarea.input {
     resize: none;
     height: 104px;
 }
 
 .input,
-.textarea {
+textarea.input {
     @extend %transition;
     font-size: 12px;
     padding: 16px;
     width: 100%;
     outline: none;
     border: 1px solid $color-text;
+
+    &:hover,
+    &:active {
+        border-color: $color-primary-active;
+    }
 
     &:focus {
         border-color: $color-primary;
