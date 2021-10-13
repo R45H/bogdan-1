@@ -1,0 +1,22 @@
+.input {
+    height: 44px;
+}
+
+.textarea {
+    resize: none;
+    height: 104px;
+}
+
+.input,
+.textarea {
+    @extend %transition;
+    font-size: 12px;
+    padding: 16px;
+    width: 100%;
+    outline: none;
+    border: 1px solid $color-text;
+
+    &:focus {
+        border-color: $color-primary;
+    }
+}
