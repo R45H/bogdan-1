@@ -1,65 +1,73 @@
 <form method="post" action="#" class="form" id="message">
-    <div class="row form__row">
-        <div class="col-4">
-            <input required name="name" title="name" placeholder="YOUR NAME" type="text" class="input" form="message" />
+    <div class="row">
+        <div class="col form__col">
+            <input
+                required
+                name="name"
+                title="name"
+                placeholder="your name"
+                type="text"
+                class="input form__input"
+                form="message"
+            />
         </div>
-        <div class="col-4">
+        <div class="col form__col">
             <input
                 required
                 name="email"
                 title="email"
-                placeholder="YOUR E-MAIL"
+                placeholder="you e-mail"
                 type="email"
-                class="input"
+                class="input form__input"
                 form="message"
             />
         </div>
     </div>
-    <div class="row form__row">
-        <div class="col-4">
+    <div class="row">
+        <div class="col form__col">
             <input
                 required
                 name="subject"
                 title="subject"
-                placeholder="YOUR SUBJECT"
+                placeholder="your subject"
                 type="text"
-                class="input"
+                class="input form__input"
                 form="message"
             />
         </div>
-        <div class="col-4">
+        <div class="col form__col">
             <input
                 required
                 name="company"
                 title="subject"
-                placeholder="COMPANY NAME"
+                placeholder="company name"
                 type="text"
-                class="input"
+                class="input form__input"
                 form="message"
             />
         </div>
     </div>
-    <div class="row form__row">
-        <div class="col-8">
+    <div class="row">
+        <div class="col form__col">
             <textarea
                 required
                 name="text"
                 title="text"
-                placeholder="WRITE YOUR MESSAGE"
-                class="input"
+                placeholder="write your message"
+                class="input form__input"
                 form="message"
             ></textarea>
         </div>
     </div>
-    <div class="row form__row">
-        <div class="col-auto">
+    <div class="row">
+        <div class="col-auto form__col">
             <button form="message" class="button button_type_form">
                 <span>Send message</span>
                 @include('../blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
             </button>
         </div>
-        <div class="col-auto">
-            <div class="form__text"><span>*</span> We’ll contact you as as possible. We don’t reply on Monday.</div>
+        <div class="col form__col">
+            <div class="form__remark"><span>*</span> We’ll contact you as as possible. We don’t reply on Monday.</div>
         </div>
     </div>
 </form>
