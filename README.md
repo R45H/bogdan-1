@@ -25,7 +25,7 @@
 - [x] Карточка в blog
 - [x] Секция clients
 - [x] Полоска под заголовком
-- [ ] Input + textarea
+- [x] Input + textarea
 - [ ] Форма
 - [ ] Блок с одним контактом
 - [ ] Секция contact
