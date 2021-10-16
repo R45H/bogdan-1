@@ -1,4 +1,5 @@
 .input {
+    display: block;
     @extend %transition;
     height: 44px;
     transition-property: border-color;
@@ -11,6 +12,7 @@
 
     &::placeholder {
         @extend %transition;
+        text-transform: uppercase;
         color: lighten($color-text, 20%);
     }
 

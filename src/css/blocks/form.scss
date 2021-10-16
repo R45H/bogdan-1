@@ -1,18 +1,6 @@
 .form {
-    &__input {
-        height: 100%;
-
-        &::placeholder {
-            text-transform: uppercase;
-        }
-    }
-
-    &__col {
-        padding: 16px 8px;
-
-        &:last-child {
-            display: inline-flex;
-        }
+    &__col-wrap {
+        display: inline-flex;
     }
 
     &__remark {
