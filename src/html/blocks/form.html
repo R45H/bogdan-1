@@ -1,61 +1,30 @@
 <form method="post" action="#" class="form">
     <div class="row">
         <div class="col-6">
-            <input required name="name" title="name" placeholder="your name" type="text" class="input form__input" />
+            <input required name="name" title="name" placeholder="your name" type="text" class="input" />
         </div>
         <div class="col-6">
-            <input
-                required
-                name="email"
-                title="email"
-                placeholder="your e-mail"
-                type="email"
-                class="input form__input"
-            />
+            <input required name="email" title="email" placeholder="your e-mail" type="email" class="input" />
         </div>
         <div class="col-6">
-            <input
-                required
-                name="subject"
-                title="subject"
-                placeholder="your subject"
-                type="text"
-                class="input form__input"
-            />
+            <input required name="subject" title="subject" placeholder="your subject" type="text" class="input" />
         </div>
         <div class="col-6">
-            <input
-                required
-                name="company"
-                title="subject"
-                placeholder="company name"
-                type="text"
-                class="input form__input"
-            />
+            <input required name="company" title="subject" placeholder="company name" type="text" class="input" />
         </div>
         <div class="col-12">
-            <textarea
-                required
-                name="text"
-                title="text"
-                placeholder="write your message"
-                class="input form__input"
-            ></textarea>
+            <textarea required name="text" title="text" placeholder="write your message" class="input"></textarea>
+        </div>
+    </div>
+    <div class="row form__row">
+        <div class="col-auto">
+            <button type="submit" class="button button_type_form">
+                <span>Send message</span>
+                @include('../blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+            </button>
         </div>
         <div class="col">
-            <div class="row">
-                <div class="col-auto">
-                    <button type="submit" class="button button_type_form">
-                        <span>Send message</span>
-                        @include('../blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
-                    </button>
-                </div>
-                <div class="col form__col-wrap">
-                    <div class="form__remark">
-                        <span>*</span> We’ll contact you as as possible. We don’t reply on Monday.
-                    </div>
-                </div>
-            </div>
+            <span class="form__star">*</span> We’ll contact you as as possible. We don’t reply on Monday.
         </div>
     </div>
 </form>

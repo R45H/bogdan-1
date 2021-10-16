@@ -19,6 +19,10 @@ $columns: 12;
     flex-wrap: wrap;
 }
 
+.row + .row {
+    padding-top: $gap;
+}
+
 [class|='col'] {
     padding: $gap;
 }

@@ -1,15 +1,11 @@
 .form {
-    &__col-wrap {
-        display: inline-flex;
-    }
-
-    &__remark {
-        margin: auto 0;
+    &__row {
+        align-items: center;
         font-size: 12px;
         color: $color-text;
+    }
 
-        span {
-            color: $color-primary;
-        }
+    &__star {
+        color: $color-primary;
     }
 }
