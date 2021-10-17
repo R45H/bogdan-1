@@ -19,25 +19,25 @@ $columns: 12;
     display: flex;
     flex-wrap: wrap;
 
-    &_sm {
-        margin: -$gap-sm;
+    & + & {
+        margin-top: $gap-md;
     }
 }
 
-.row + .row {
-    margin-top: $gap-md;
-}
+.row-gap-sm {
+    margin: -$gap-sm;
 
-.row_sm + .row {
-    margin-top: $gap-sm;
+    & + .row {
+        margin-top: $gap-sm;
+    }
+
+    & > [class|='col'] {
+        padding: $gap-sm;
+    }
 }
 
 [class|='col'] {
     padding: $gap-md;
-}
-
-.row_sm > [class|='col'] {
-    padding: $gap-sm;
 }
 
 .col {
