@@ -1,0 +1,20 @@
+.contacts {
+    display: flex;
+
+    &__icon {
+        width: 20px;
+    }
+
+    &__info {
+        padding: 0 8px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__details {
+        font-size: 12px;
+    }
+}
