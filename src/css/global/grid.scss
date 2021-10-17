@@ -27,11 +27,11 @@ $columns: 12;
 .row-gap-sm {
     margin: -$gap-sm;
 
-    & + .row {
+    + .row {
         margin-top: $gap-sm;
     }
 
-    & > [class|='col'] {
+    > [class|='col'] {
         padding: $gap-sm;
     }
 }
