@@ -1,4 +1,5 @@
-$gap: 16px;
+$gap-sm: 12px;
+$gap-md: 16px;
 $columns: 12;
 
 .container {
@@ -9,22 +10,34 @@ $columns: 12;
 .container,
 .container-fluid {
     width: 100%;
-    padding: 0 $gap;
+    padding: 0 $gap-md;
     position: relative;
 }
 
 .row {
-    margin: -$gap;
+    margin: -$gap-md;
     display: flex;
     flex-wrap: wrap;
+
+    &_sm {
+        margin: -$gap-sm;
+    }
 }
 
 .row + .row {
-    padding-top: $gap;
+    margin-top: $gap-md;
+}
+
+.row_sm + .row {
+    margin-top: $gap-sm;
 }
 
 [class|='col'] {
-    padding: $gap;
+    padding: $gap-md;
+}
+
+.row_sm > [class|='col'] {
+    padding: $gap-sm;
 }
 
 .col {

@@ -1,5 +1,5 @@
 <form method="post" action="#" class="form">
-    <div class="row">
+    <div class="row row_sm">
         <div class="col-6">
             <input required name="name" title="name" placeholder="your name" type="text" class="input" />
         </div>
@@ -16,7 +16,7 @@
             <textarea required name="text" title="text" placeholder="write your message" class="input"></textarea>
         </div>
     </div>
-    <div class="row form__row">
+    <div class="row row_sm form__row">
         <div class="col-auto">
             <button type="submit" class="button button_type_form">
                 <span>Send message</span>
@@ -24,7 +24,9 @@
             </button>
         </div>
         <div class="col">
-            <span class="form__star">*</span> We’ll contact you as as possible. We don’t reply on Monday.
+            <div class="form__remark">
+                <span class="form__remark-star">*</span> We’ll contact you as as possible. We don’t reply on Monday.
+            </div>
         </div>
     </div>
 </form>
