@@ -1,6 +1,7 @@
 .input {
+    display: block;
     @extend %transition;
-    height: 44px;
+    line-height: 1.5;
     transition-property: border-color;
     color: $color-text;
     font-size: 12px;
@@ -11,6 +12,7 @@
 
     &::placeholder {
         @extend %transition;
+        text-transform: uppercase;
         color: lighten($color-text, 20%);
     }
 
@@ -31,5 +33,4 @@
 textarea.input {
     resize: vertical;
     min-height: 104px;
-    line-height: 1.5;
 }
