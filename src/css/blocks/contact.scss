@@ -2,8 +2,8 @@
     display: flex;
 
     &__icon {
+        flex: none;
         width: 16px;
-        min-width: 16px;
         margin-right: 8px;
     }
 
