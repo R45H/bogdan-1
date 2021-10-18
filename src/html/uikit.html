@@ -340,15 +340,14 @@
                 <!-- Блок Contact -->
                 <div class="block root__block">
                     <div class="block__name">Contact</div>
-
+                    <!-- prettier-ignore -->
                     <div class="block__body">
                         <div class="block__item block__item_wide">
-                            @include('./blocks/contact.html', { icon: 'smartphone', title: 'Hotline (24x7)', text: '<a
-                                href="tel:+650052300"
-                                >+65 0052 300</a
-                            >, <a href="tel:+6588251210">+65 88251 210</a><br /><a href="tel:+8801723511340">
-                                +88 01723 511 340</a
-                            >', })
+                            @include('./blocks/contact.html', {
+                                icon: 'smartphone',
+                                title: 'Hotline (24x7)',
+                                text: '<a href="tel:+650052300">+65 0052 300</a>, <a href="tel:+6588251210">+65 88251 210</a><br /><a href="tel:+8801723511340">+88 01723 511 340</a>',
+                            })
                         </div>
                     </div>
                 </div>
