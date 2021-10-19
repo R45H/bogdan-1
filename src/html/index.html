@@ -4,100 +4,376 @@
         @include('./partials/head.html', { title:'Первый сайт' })
     </head>
     <body class="root">
+        <!-- Секция Header -->
         @include('./partials/header.html')
 
         <main class="root__content root__content-with-header">
+            <!-- Секция Home -->
             <section
                 id="home"
                 class="section section_first section_fill_dark root__section-with-header"
                 style="background-image: url('@webRoot/images/bg.jpg')"
             >
                 <div class="container-fluid root__text-white root__text-align-center">
-                    <h1>Welcome to startup</h1>
-                    <div>You favorite creative agency template</div>
-                    <a class="button" href="#services">
-                        <span>Get started</span>
-                        @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
-                    </a>
-                </div>
-            </section>
-
-            <section id="services" class="section">
-                <div class="container root__text-align-center">
-                    <h2>Services</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minim</div>
-                    <div>
-                        <div>
-                            <div>A</div>
-                            <div>Clean Typography</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                            </div>
-                        </div>
-                        <div>
-                            <div>Картинка №2</div>
-                            <div>Rock Solid Code</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                            </div>
-                        </div>
-                        <div>
-                            <div>Картинка №3</div>
-                            <div>Expert Support</div>
-                            <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-                                quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div id="about" class="section section_bg_gray">
-                <div class="container root__text-align-center">About us</div>
-            </div>
-
-            <div id="works" class="section">
-                <div class="container root__text-align-center">
-                    <div class="root__text-white">Works</div>
-                    <div class="work">
-                        <a href="#" class="button button_type_light">
-                            <span>view</span>
+                    <h1 class="title title_size_lg root__block-bottom">Welcome to startup</h1>
+                    <div class="subtitle root__text-capitalize">You favorite creative agency template</div>
+                    <div class="root__block">
+                        <a class="button" href="#services">
+                            <span>Get started</span>
                             @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div class="section section_fill_primary" style="background-image: url('@webRoot/images/bg-2.jpg')">
-                <div class="container-fluid root__text-white root__text-align-center">
-                    <div>Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!</div>
-                    <a href="#contact" class="button">Get in Touch</a>
+            </section>
+            <!-- Секция Services -->
+            <section id="services" class="section">
+                <div class="container root__text-align-center">
+                    <div class="row root__text-align-center root__block-bottom">
+                        <div class="col-12">
+                            <h2 class="title">Services</h2>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-12">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
+                            iconName: 'a',
+                            title: 'Clean typography',
+                            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
+                            iconName: 'code',
+                            title: 'Rock Solid Code',
+                            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
+                            iconName: 'lifebuoy',
+                            title: 'Expert Support',
+                            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
+                            })
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция About -->
+            <div id="about" class="section section_bg_gray">
+                <div class="container">
+                    <div class="row root__text-align-center root__block-bottom">
+                        <div class="col-12">
+                            <h2 class="title">About us</h2>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor
+                            invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                            justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet.
+                            Lorem ipsum eat.
+                        </div>
+                        <div class="col-6">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut
+                            labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
+                            img: {
+                            url: '@webRoot/images/face/face_1.jpg',
+                            alt: 'face-1',
+                            },
+                            title: 'Md. Khalil Uddin',
+                            subtitle: 'Head of Ideas',
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
+                            img: {
+                            url: '@webRoot/images/face/face_2.jpg',
+                            alt: 'face-2',
+                            },
+                            title: 'Rubel Miah',
+                            subtitle: 'Lead WordPress Developer',
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
+                            img: {
+                            url: '@webRoot/images/face/face_3.jpg',
+                            alt: 'face-3',
+                            },
+                            title: 'Shamim Mia',
+                            subtitle: 'Sr. Web Developer',
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
+                            img: {
+                            url: '@webRoot/images/face/face_4.jpg',
+                            alt: 'face-4',
+                            },
+                            title: 'John Doe',
+                            subtitle: 'Front-end Developer',
+                            })
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div id="blog" class="section">
-                <div class="container root__text-align-center">Recent blog posts</div>
-            </div>
-
-            <div id="clients" class="section section_bg_gray">
-                <div class="container root__text-align-center">Clients</div>
-            </div>
-
-            <div id="contact" class="section">
+            <!-- Секция Work -->
+            <div id="works" class="section">
                 <div class="container root__text-align-center">
-                    <span>Contact</span>
-                    <br />
-                    <div class="button button_type_form">
-                        <span>Send message</span>
-                        @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                    <div class="row root__text-align-center root__block-bottom">
+                        <div class="col-12">
+                            <h2 class="title">Latest Works</h2>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-1.jpg',
+                            alt: 'work-1',
+                            },
+                            title: 'Hair Dresser',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-2.jpg',
+                            alt: 'work-2',
+                            },
+                            title: 'Dove Carrier',
+                            subtitle: 'Branding dove',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-3.jpg',
+                            alt: 'work-3',
+                            },
+                            title: 'Business Style',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-4.jpg',
+                            alt: 'work-4',
+                            },
+                            title: 'Retro Photo Style',
+                            subtitle: 'Blog',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-5.jpg',
+                            alt: 'work-5',
+                            },
+                            title: 'Funny Bike',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-6.jpg',
+                            alt: 'work-6',
+                            },
+                            title: 'Notebook Clear',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-7.jpg',
+                            alt: 'work-7',
+                            },
+                            title: 'Great MacBoock',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-8.jpg',
+                            alt: 'work-8',
+                            },
+                            title: 'Cleared Desktop',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/work.html', {
+                            img: {
+                            url: '@webRoot/images/work/work-9.jpg',
+                            alt: 'work-9',
+                            },
+                            title: 'Events Day',
+                            subtitle: 'Branding',
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Секция быстрого перехода к Contact-->
+            <div class="section section_fill_primary" style="background-image: url('@webRoot/images/bg-2.jpg')">
+                <div class="container-fluid root__text-white">
+                    <div class="row root__text-align-center">
+                        <div class="col-12">
+                            <div class="subtitle subtitle_size_xl">
+                                Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!
+                            </div>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <a href="#contact" class="button">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Секция Blog-->
+            <div id="blog" class="section">
+                <div class="container">
+                    <div class="row root__text-align-center root__block-bottom">
+                        <div class="col-12">
+                            <h2 class="title">Recent blog posts</h2>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                        </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="root__block-bottom">
+                        @include('./blocks/blog.html', {
+                        img: {
+                        url: '@webRoot/images/blog/blog-1.jpg',
+                        alt: 'blog-1',
+                        },
+                        date: {
+                        day: '18',
+                        month: 'OCT',
+                        },
+                        title: 'Startup ideas needs to be funded',
+                        author: 'Khalil Uddin',
+                        category: 'Development',
+                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                        })
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="root__block-bottom">
+                        @include('./blocks/blog.html', {
+                        img: {
+                        url: '@webRoot/images/blog/blog-2.jpg',
+                        alt: 'blog-1',
+                        },
+                        date: {
+                        day: '18',
+                        month: 'OCT',
+                        },
+                        title: 'User Interface Designing Elements',
+                        author: 'Khalil Uddin',
+                        category: 'Development',
+                        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                        })
+                    </div>
+                </div>
+            </div>
+            <!-- Секция Client-->
+            <div id="clients" class="section section_bg_gray">
+                <div class="container">@include('./blocks/clients.html')</div>
+            </div>
+            <!-- Секция Contact -->
+            <div id="contact" class="section">
+                <div class="container">
+                    <div class="row root__text-align-center root__block-bottom">
+                        <div class="col-12">
+                            <h2 class="title">Get in touch</h2>
+                        </div>
+                        <div class="col-12 root__block-center">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                        </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    @include('./blocks/contact.html', {
+                                    icon: 'point',
+                                    title: 'address',
+                                    text: '312, 7th Ave, New York <br /> NY 101200, United States of America',
+                                    })
+                                </div>
+                                <div class="col-12">
+                                    @include('./blocks/contact.html', {
+                                    icon: 'smartphone',
+                                    title: 'Hotline (24x7)',
+                                    text: '<a href="tel:+650052300">+65 0052 300</a>, <a href="tel:+6588251210">+65 88251 210</a><br /><a href="tel:+8801723511340">+88 01723 511 340</a>',
+                                    })
+                                </div>
+                                <div class="col-12">
+                                    @include('./blocks/contact.html', {
+                                    icon: 'mail',
+                                    title: 'e-mail',
+                                    text: '<a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a> <br /> <a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a>',
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">@include('./blocks/form.html')</div>
                     </div>
                 </div>
             </div>
         </main>
 
+        <!-- Секция Footer -->
         @include('./partials/footer.html')
     </body>
 </html>

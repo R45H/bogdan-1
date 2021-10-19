@@ -37,7 +37,24 @@ $section-padding-top: 100px + $header-height;
         color: $color-white;
     }
 
+    &__text-uppercase {
+        text-transform: uppercase;
+    }
+
+    &__text-capitalize {
+        text-transform: capitalize;
+    }
+
     &__block {
         margin: 32px 0;
+    }
+
+    &__block-bottom {
+        margin-bottom: 20px;
+    }
+
+    &__block-center {
+        display: flex;
+        justify-content: center;
     }
 }
