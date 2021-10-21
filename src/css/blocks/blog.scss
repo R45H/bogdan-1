@@ -51,4 +51,23 @@
         font-size: 13px;
         text-transform: uppercase;
     }
+
+    & + & {
+        border-top: 1px solid #ddd;
+    }
+
+    & .row {
+        margin-bottom: $gap-md;
+    }
+
+    & + & .row {
+        margin-top: $gap-md;
+        margin-left: -$gap-md;
+        margin-right: -$gap-md;
+        margin-bottom: $gap-md;
+    }
+
+    &:last-child .row {
+        margin-bottom: -$gap-md;
+    }
 }

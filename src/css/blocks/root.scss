@@ -49,11 +49,23 @@ $section-padding-top: 100px + $header-height;
         margin: 32px 0;
     }
 
-    &__block-bottom {
-        margin-bottom: 20px;
+    &__title {
+        margin-bottom: 28px;
     }
 
-    &__block-center {
+    &__title-section {
+        margin-bottom: 68px;
+    }
+
+    &__line {
+        margin: 32px auto;
+    }
+
+    &__subtitle {
+        margin-bottom: 48px;
+    }
+
+    &__footer-social-center {
         display: flex;
         justify-content: center;
     }
