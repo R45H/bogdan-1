@@ -69,4 +69,8 @@ $section-padding-top: 100px + $header-height;
         display: flex;
         justify-content: center;
     }
+
+    &__line-blog {
+        margin: 32px 0;
+    }
 }

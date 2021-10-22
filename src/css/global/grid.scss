@@ -16,6 +16,7 @@ $columns: 12;
 
 .row {
     margin: -$gap-md;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -37,7 +38,7 @@ $columns: 12;
 }
 
 [class|='col'] {
-    padding: $gap-md;
+    padding: $gap-md $gap-md 0 $gap-md;
 }
 
 .col {

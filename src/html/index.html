@@ -16,12 +16,11 @@
             >
                 <div class="container-fluid root__text-white root__text-align-center">
                     <h1 class="title title_size_lg root__title">Welcome to startup</h1>
-                    <div class="subtitle root__subtitle root__text-capitalize">
+                    <div class="subtitle subtitle_size_lg root__subtitle root__text-capitalize">
                         You favorite creative agency template
                     </div>
                     <a class="button" href="#services">
                         <span>Get started</span>
-                        @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
                     </a>
                 </div>
             </section>
@@ -176,6 +175,8 @@
                                 subtitle: 'Branding',
                             })
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-4">
                             <!-- prettier-ignore -->
                             @include('./blocks/work.html', {
@@ -209,6 +210,8 @@
                                 subtitle: 'Branding',
                             })
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-4">
                             <!-- prettier-ignore -->
                             @include('./blocks/work.html', {
@@ -223,10 +226,10 @@
                         <div class="col-4">
                             <!-- prettier-ignore -->
                             @include('./blocks/work.html', {
-                                    img: {
+                                img: {
                                     url: '@webRoot/images/work/work-8.jpg',
                                     alt: 'work-8',
-                                    },
+                                },
                                 title: 'Cleared Desktop',
                                 subtitle: 'Branding',
                             })
@@ -270,14 +273,16 @@
                                     alt: 'blog-1',
                                 },
                                 date: {
-                                day: '18',
-                                month: 'OCT',
+                                    day: '18',
+                                    month: 'OCT',
                                 },
                                 title: 'Startup ideas needs to be funded',
                                 author: 'Khalil Uddin',
                                 category: 'Development',
                                 text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
                             })
+
+                    <div class="line-blog root__line"></div>
 
                     <!-- prettier-ignore -->
                     @include('./blocks/blog.html', {
@@ -286,8 +291,8 @@
                                     alt: 'blog-1',
                                 },
                                 date: {
-                                day: '18',
-                                month: 'OCT',
+                                    day: '18',
+                                    month: 'OCT',
                                 },
                                 title: 'User Interface Designing Elements',
                                 author: 'Khalil Uddin',
