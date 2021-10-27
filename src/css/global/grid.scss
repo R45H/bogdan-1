@@ -22,7 +22,7 @@ $columns: 12;
     flex-wrap: wrap;
 
     & + & {
-        margin-top: $gap-md;
+        margin-top: 0;
     }
 }
 
