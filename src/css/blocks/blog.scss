@@ -52,9 +52,8 @@
         text-transform: uppercase;
     }
 
-    & + & {
-        margin-top: $gap-md * 2;
-        padding-top: $gap-md;
+    & + &:not(:first-child) {
+        margin-top: 32px;
         border-top: 1px solid #ddd;
     }
 }
