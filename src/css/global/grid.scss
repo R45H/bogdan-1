@@ -15,33 +15,34 @@ $columns: 12;
 }
 
 .row {
-    margin-top: 0;
-    margin-right: -$gap-md;
+    margin: -$gap-md;
     margin-bottom: 0;
-    margin-left: -$gap-md;
     display: flex;
     flex-wrap: wrap;
+
+    & + & {
+        margin-top: $gap-md;
+    }
 }
 
 .row-gap-sm {
     margin: -$gap-sm;
 
-    & + .row {
+    + .row {
         margin-top: $gap-sm;
     }
 
-    & > [class|='col'] {
-        padding-left: $gap-sm;
+    > [class|='col'] {
+        padding: $gap-sm;
         padding-top: $gap-sm * 2;
-        padding-right: $gap-sm;
+        padding-bottom: 0;
     }
 }
 
 [class|='col'] {
+    padding: $gap-md;
     padding-top: $gap-md * 2;
-    padding-right: $gap-md;
     padding-bottom: 0;
-    padding-left: $gap-md;
 }
 
 .col {
