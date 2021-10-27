@@ -70,7 +70,11 @@ $section-padding-top: 100px + $header-height;
         justify-content: center;
     }
 
-    &__line-blog {
-        margin: 32px 0;
+    &__blog {
+        & + & {
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid #ddd;
+        }
     }
 }

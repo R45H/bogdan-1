@@ -51,10 +51,4 @@
         font-size: 13px;
         text-transform: uppercase;
     }
-
-    & + &:not(:first-child) {
-        margin-top: 32px;
-        padding-top: 32px;
-        border-top: 1px solid #ddd;
-    }
 }

@@ -32,20 +32,18 @@ $columns: 12;
     margin-bottom: 0;
 
     + .row {
-        margin-top: $gap-sm;
+        margin-top: 0;
     }
 
     > [class|='col'] {
-        padding: $gap-sm;
-        padding-top: $gap-sm * 2;
-        padding-bottom: 0;
+        margin-top: $gap-sm * 2;
+        padding: 0 $gap-sm;
     }
 }
 
 [class|='col'] {
-    padding: $gap-md;
-    padding-top: $gap-md * 2;
-    padding-bottom: 0;
+    margin-top: $gap-md * 2;
+    padding: 0 $gap-md;
 }
 
 .col {
