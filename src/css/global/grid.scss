@@ -19,10 +19,6 @@ $columns: 12;
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
-
-    & + & {
-        margin-top: $gap-md;
-    }
 }
 
 .row-gap-sm {
@@ -33,12 +29,12 @@ $columns: 12;
     }
 
     > [class|='col'] {
-        padding: $gap-sm;
+        padding: $gap-sm * 2 $gap-sm 0 $gap-sm;
     }
 }
 
 [class|='col'] {
-    padding: $gap-md $gap-md 0 $gap-md;
+    padding: $gap-md * 2 $gap-md 0 $gap-md;
 }
 
 .col {
