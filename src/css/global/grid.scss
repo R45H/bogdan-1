@@ -15,9 +15,7 @@ $columns: 12;
 }
 
 .row {
-    margin: -$gap-md;
-    margin-top: -$gap-md * 2;
-    margin-bottom: 0;
+    margin: (-$gap-md * 2) (-$gap-md) 0 (-$gap-md);
     display: flex;
     flex-wrap: wrap;
 
@@ -27,13 +25,7 @@ $columns: 12;
 }
 
 .row-gap-sm {
-    margin: -$gap-sm;
-    margin-top: -$gap-sm * 2;
-    margin-bottom: 0;
-
-    + .row {
-        margin-top: 0;
-    }
+    margin: (-$gap-sm * 2) (-$gap-sm) 0 (-$gap-sm);
 
     > [class|='col'] {
         margin-top: $gap-sm * 2;
