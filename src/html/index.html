@@ -14,21 +14,19 @@
                 class="section section_first section_fill_dark root__section-with-header"
                 style="background-image: url('@webRoot/images/bg.jpg')"
             >
-                <div class="container-fluid root__text-white root__text-align-center">
+                <div class="container-fluid root__text-align-center">
                     <h1 class="title title_size_lg root__title">Welcome to startup</h1>
                     <div class="subtitle subtitle_size_lg root__subtitle root__text-capitalize">
                         You favorite creative agency template
                     </div>
-                    <a class="button" href="#services">
-                        <span>Get started</span>
-                    </a>
+                    <a class="button" href="#services"> Get started </a>
                 </div>
             </section>
             <!-- Секция Services -->
             <section id="services" class="section">
                 <div class="container">
                     <div class="root__title-section root__text-align-center">
-                        <h2 class="title">Services</h2>
+                        <h2 class="title title_margin">Services</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
@@ -64,30 +62,32 @@
             <section id="about" class="section section_bg_gray">
                 <div class="container">
                     <div class="root__title-section root__text-align-center">
-                        <h2 class="title">About us</h2>
+                        <h2 class="title title_margin">About us</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
 
-                    <div class="row root__row-about">
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor
-                            invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                            justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                            ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet.
-                            Lorem ipsum eat.
+                    <div class="root__row-about">
+                        <div class="row">
+                            <div class="col-6">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor
+                                invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit
+                                amet. Lorem ipsum eat.
+                            </div>
+                            <div class="col-6">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor
+                                invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et
+                                justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit
+                                amet. Lorem ipsum dolor et.
+                            </div>
                         </div>
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut
-                            labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et
-                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/about.html', {
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- prettier-ignore -->
+                                @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/face/face_1.jpg',
                                     alt: 'face-1',
@@ -95,10 +95,10 @@
                                 title: 'Md. Khalil Uddin',
                                 subtitle: 'Head of Ideas',
                             })
-                        </div>
-                        <div class="col-3">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/about.html', {
+                            </div>
+                            <div class="col-3">
+                                <!-- prettier-ignore -->
+                                @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/face/face_2.jpg',
                                     alt: 'face-2',
@@ -106,10 +106,10 @@
                                 title: 'Rubel Miah',
                                 subtitle: 'Lead WordPress Developer',
                             })
-                        </div>
-                        <div class="col-3">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/about.html', {
+                            </div>
+                            <div class="col-3">
+                                <!-- prettier-ignore -->
+                                @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/face/face_3.jpg',
                                     alt: 'face-3',
@@ -117,10 +117,10 @@
                                 title: 'Shamim Mia',
                                 subtitle: 'Sr. Web Developer',
                             })
-                        </div>
-                        <div class="col-3">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/about.html', {
+                            </div>
+                            <div class="col-3">
+                                <!-- prettier-ignore -->
+                                @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/face/face_4.jpg',
                                     alt: 'face-4',
@@ -128,6 +128,7 @@
                                 title: 'John Doe',
                                 subtitle: 'Front-end Developer',
                             })
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +137,7 @@
             <section id="works" class="section">
                 <div class="container">
                     <div class="root__title-section root__text-align-center">
-                        <h2 class="title">Latest Works</h2>
+                        <h2 class="title title_margin">Latest Works</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
                     </div>
@@ -246,7 +247,7 @@
             </section>
             <!-- Секция быстрого перехода к Contact-->
             <section class="section section_fill_primary" style="background-image: url('@webRoot/images/bg-2.jpg')">
-                <div class="container-fluid root__text-white root__text-align-center">
+                <div class="container-fluid root__text-align-center">
                     <h2 class="subtitle subtitle_size_xl root__subtitle">
                         Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!
                     </h2>
@@ -257,7 +258,7 @@
             <section id="blog" class="section">
                 <div class="container">
                     <div class="root__title-section root__text-align-center">
-                        <h2 class="title">Recent blog posts</h2>
+                        <h2 class="title title_margin">Recent blog posts</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
@@ -300,13 +301,13 @@
             </section>
             <!-- Секция Client-->
             <section id="clients" class="section section_bg_gray">
-                <div class="container">@include('./blocks/clients.html')</div>
+                <div class="container container-fluid">@include('./blocks/clients.html')</div>
             </section>
             <!-- Секция Contact -->
             <section id="contact" class="section">
                 <div class="container">
                     <div class="root__title-section root__text-align-center">
-                        <h2 class="title">Get in touch</h2>
+                        <h2 class="title title_margin">Get in touch</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>

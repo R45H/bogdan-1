@@ -1,0 +1,14 @@
+.footer {
+    text-align: center;
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    &__copyright {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

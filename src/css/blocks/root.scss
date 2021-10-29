@@ -1,6 +1,7 @@
 $header-height: 72px;
 $content-margin-top: -$header-height;
 $section-padding-top: 100px + $header-height;
+$color-gray-blog: #ddd;
 
 .root {
     display: flex;
@@ -58,27 +59,24 @@ $section-padding-top: 100px + $header-height;
     }
 
     &__line {
-        margin: 32px auto;
+        margin: 0 auto 24px;
     }
 
     &__subtitle {
         margin-bottom: 48px;
     }
 
-    &__footer-social-center {
-        display: flex;
-        justify-content: center;
-    }
-
     &__blog {
         & + & {
             margin-top: 32px;
             padding-top: 32px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid $color-gray-blog;
         }
     }
 
     &__row-about {
-        margin-bottom: 36px;
+        .row + .row {
+            margin-top: 36px;
+        }
     }
 }
