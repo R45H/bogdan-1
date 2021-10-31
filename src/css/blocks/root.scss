@@ -1,7 +1,7 @@
 $header-height: 72px;
 $content-margin-top: -$header-height;
 $section-padding-top: 100px + $header-height;
-$color-gray-blog: #ddd;
+$color-line: #ddd;
 
 .root {
     display: flex;
@@ -34,35 +34,29 @@ $color-gray-blog: #ddd;
         text-align: center;
     }
 
-    &__text-white {
-        color: $color-white;
-    }
-
-    &__text-uppercase {
-        text-transform: uppercase;
-    }
-
-    &__text-capitalize {
-        text-transform: capitalize;
-    }
-
     &__block {
         margin: 32px 0;
     }
 
     &__title {
-        margin-bottom: 28px;
+        margin-bottom: 20px;
     }
 
-    &__title-section {
+    &__title-section-wrap {
+        text-align: center;
         margin-bottom: 68px;
     }
 
+    &__title-section {
+        margin-bottom: 24px;
+    }
+
     &__line {
-        margin: 0 auto 24px;
+        margin: 0 auto 20px;
     }
 
     &__subtitle {
+        text-transform: capitalize;
         margin-bottom: 48px;
     }
 
@@ -70,13 +64,11 @@ $color-gray-blog: #ddd;
         & + & {
             margin-top: 32px;
             padding-top: 32px;
-            border-top: 1px solid $color-gray-blog;
+            border-top: 1px solid $color-line;
         }
     }
 
     &__row-about {
-        .row + .row {
-            margin-top: 36px;
-        }
+        margin-bottom: 68px;
     }
 }

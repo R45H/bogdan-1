@@ -12,21 +12,19 @@
             <section
                 id="home"
                 class="section section_first section_fill_dark root__section-with-header"
-                style="background-image: url('@webRoot/images/bg.jpg')"
+                style="background-image: url('@webRoot/images/section/section-1.jpg')"
             >
                 <div class="container-fluid root__text-align-center">
                     <h1 class="title title_size_lg root__title">Welcome to startup</h1>
-                    <div class="subtitle subtitle_size_lg root__subtitle root__text-capitalize">
-                        You favorite creative agency template
-                    </div>
-                    <a class="button" href="#services"> Get started </a>
+                    <div class="subtitle subtitle_size_lg root__subtitle">You favorite creative agency template</div>
+                    <a class="button" href="#services">Get started</a>
                 </div>
             </section>
             <!-- Секция Services -->
             <section id="services" class="section">
                 <div class="container">
-                    <div class="root__title-section root__text-align-center">
-                        <h2 class="title title_margin">Services</h2>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Services</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
@@ -61,8 +59,8 @@
             <!-- Секция About -->
             <section id="about" class="section section_bg_gray">
                 <div class="container">
-                    <div class="root__title-section root__text-align-center">
-                        <h2 class="title title_margin">About us</h2>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">About us</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
@@ -84,51 +82,51 @@
                                 amet. Lorem ipsum dolor et.
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
-                                    url: '@webRoot/images/face/face_1.jpg',
+                                    url: '@webRoot/images/about/about-1.jpg',
                                     alt: 'face-1',
                                 },
                                 title: 'Md. Khalil Uddin',
                                 subtitle: 'Head of Ideas',
                             })
-                            </div>
-                            <div class="col-3">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
-                                    url: '@webRoot/images/face/face_2.jpg',
+                                    url: '@webRoot/images/about/about-2.jpg',
                                     alt: 'face-2',
                                 },
                                 title: 'Rubel Miah',
                                 subtitle: 'Lead WordPress Developer',
                             })
-                            </div>
-                            <div class="col-3">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
-                                    url: '@webRoot/images/face/face_3.jpg',
+                                    url: '@webRoot/images/about/about-3.jpg',
                                     alt: 'face-3',
                                 },
                                 title: 'Shamim Mia',
                                 subtitle: 'Sr. Web Developer',
                             })
-                            </div>
-                            <div class="col-3">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
-                                    url: '@webRoot/images/face/face_4.jpg',
+                                    url: '@webRoot/images/about/about-4.jpg',
                                     alt: 'face-4',
                                 },
                                 title: 'John Doe',
                                 subtitle: 'Front-end Developer',
                             })
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,8 +134,8 @@
             <!-- Секция Work -->
             <section id="works" class="section">
                 <div class="container">
-                    <div class="root__title-section root__text-align-center">
-                        <h2 class="title title_margin">Latest Works</h2>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Latest Works</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
                     </div>
@@ -246,7 +244,10 @@
                 </div>
             </section>
             <!-- Секция быстрого перехода к Contact-->
-            <section class="section section_fill_primary" style="background-image: url('@webRoot/images/bg-2.jpg')">
+            <section
+                class="section section_fill_primary"
+                style="background-image: url('@webRoot/images/section/section-2.jpg')"
+            >
                 <div class="container-fluid root__text-align-center">
                     <h2 class="subtitle subtitle_size_xl root__subtitle">
                         Do you like OUR WORK so far?<br />Let's talk about YOUR PROJECT!
@@ -257,8 +258,8 @@
             <!-- Секция Blog-->
             <section id="blog" class="section">
                 <div class="container">
-                    <div class="root__title-section root__text-align-center">
-                        <h2 class="title title_margin">Recent blog posts</h2>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Recent blog posts</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
@@ -301,13 +302,13 @@
             </section>
             <!-- Секция Client-->
             <section id="clients" class="section section_bg_gray">
-                <div class="container container-fluid">@include('./blocks/clients.html')</div>
+                <div class="container-fluid">@include('./blocks/clients.html')</div>
             </section>
             <!-- Секция Contact -->
             <section id="contact" class="section">
                 <div class="container">
-                    <div class="root__title-section root__text-align-center">
-                        <h2 class="title title_margin">Get in touch</h2>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Get in touch</h2>
                         <div class="line root__line"></div>
                         <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
                     </div>
