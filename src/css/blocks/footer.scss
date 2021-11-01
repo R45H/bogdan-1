@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 28px;
+    }
+
+    &__line {
+        margin: 0 auto 24px;
+    }
+
+    &__copyright {
+        text-transform: uppercase;
+    }
+}

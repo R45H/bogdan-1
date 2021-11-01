@@ -2,4 +2,8 @@
     width: 50px;
     height: 2px;
     background-color: $color-text;
+
+    &_white {
+        background-color: $color-white;
+    }
 }

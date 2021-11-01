@@ -9,6 +9,7 @@
     }
 
     &_bg_primary {
+        color: $color-white;
         background-color: $color-primary;
     }
 
@@ -18,6 +19,7 @@
 
     &_fill_primary,
     &_fill_dark {
+        color: $color-white;
         position: relative;
 
         &::before {
