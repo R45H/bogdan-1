@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    min-width: 450px;
     font-family: $font-primary;
     font-size: 14px;
     line-height: 1.5;
@@ -21,6 +22,7 @@ a[class=''] {
     text-decoration: none;
     color: $color-text;
     border-bottom: 1px solid currentColor;
+    word-break: break-all;
 
     &:hover,
     &:focus {

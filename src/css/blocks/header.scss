@@ -2,4 +2,11 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
 }

@@ -42,3 +42,9 @@
         opacity: 0.45;
     }
 }
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+}

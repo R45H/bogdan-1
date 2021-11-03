@@ -52,3 +52,9 @@
         text-transform: uppercase;
     }
 }
+
+@media (max-width: 768px) {
+    .blog .col-5:first-child {
+        display: none;
+    }
+}
