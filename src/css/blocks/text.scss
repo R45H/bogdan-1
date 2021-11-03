@@ -1,0 +1,14 @@
+.text {
+    p {
+        margin: 12px 8px 0;
+    }
+
+    ul,
+    ol {
+        margin: 12px;
+
+        & > li {
+            padding-top: 8px;
+        }
+    }
+}
