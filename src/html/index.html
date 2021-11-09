@@ -354,5 +354,21 @@
 
         <!-- Секция Footer -->
         @include('./partials/footer.html')
+
+        <!-- Скрипты -->
+        <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../slick/slick.min.js"></script>
+        <!-- инициализация и настройки для слайдера -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.slider').slick({
+                    slidesToScroll: 1,
+                    speed: 1000,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    arrows: false,
+                });
+            });
+        </script>
     </body>
 </html>

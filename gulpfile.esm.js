@@ -42,6 +42,14 @@ const paths = {
         src: `${srcPath}/images/svg-sprite/**/*.svg`,
         dest: `${distPath}/images`,
     },
+    javaScript: {
+        src: `${srcPath}/js/*.js`,
+        dest: `${distPath}/js`,
+    },
+    slick: {
+        src: `${srcPath}/slick/*`,
+        dest: `${distPath}/slick`,
+    },
 };
 
 export const clean = () => {
@@ -108,6 +116,18 @@ export const sprite = () => {
         .pipe(bs.stream());
 };
 
+export const javaScript = () => {
+    return src(paths.javaScript.src, { since: lastRun(javaScript) })
+        .pipe(dest(paths.javaScript.dest))
+        .pipe(bs.stream());
+};
+
+export const slick = () => {
+    return src(paths.slick.src, { since: lastRun(javaScript) })
+        .pipe(dest(paths.slick.dest))
+        .pipe(bs.stream());
+};
+
 export const watcher = () => {
     bs.init({
         server: distPath,
@@ -123,4 +143,4 @@ export const watcher = () => {
     watch(paths.svgSprite.src, sprite);
 };
 
-export default series(clean, parallel(html, scss, cssLibs, fonts, images, sprite), watcher);
+export default series(clean, parallel(html, scss, cssLibs, fonts, images, sprite, javaScript, slick), watcher);
