@@ -1,14 +1,26 @@
 .text {
     p {
-        margin: 12px 8px 0;
+        margin: 16px 0;
     }
 
     ul,
     ol {
-        margin: 12px;
+        margin: 16px 0;
 
         & > li {
-            padding-top: 8px;
+            margin-top: 8px;
+        }
+    }
+
+    p,
+    ul,
+    ol {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }

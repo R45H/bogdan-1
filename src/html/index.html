@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        @include('./partials/head.html', { title:'Дорецкий Б.В.' })
+        @include('./partials/head.html', { title:'Первый сайт' })
     </head>
     <body class="root">
         <!-- Секция Header -->
@@ -23,37 +23,35 @@
             <!-- Секция Services -->
             <section id="services" class="section">
                 <div class="container">
-                    <div class="text">
-                        <div class="root__title-section-wrap">
-                            <h2 class="title root__title-section">Services</h2>
-                            <div class="line root__line"></div>
-                            <div class="subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/service.html', {
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Services</h2>
+                        <div class="line root__line"></div>
+                        <div class="subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
                                 iconName: 'a',
                                 title: 'Clean typography',
                                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
                             })
-                            </div>
-                            <div class="col-4">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/service.html', {
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
                                 iconName: 'code',
                                 title: 'Rock Solid Code',
                                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
                             })
-                            </div>
-                            <div class="col-4">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/service.html', {
+                        </div>
+                        <div class="col-4">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/service.html', {
                                 iconName: 'lifebuoy',
                                 title: 'Expert Support',
                                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
                             })
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,23 +59,25 @@
             <!-- Секция About -->
             <section id="about" class="section section_bg_gray">
                 <div class="container">
-                    <div class="text">
-                        <div class="root__title-section-wrap">
-                            <h2 class="title root__title-section">About us</h2>
-                            <div class="line root__line"></div>
-                            <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-                        </div>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">About us</h2>
+                        <div class="line root__line"></div>
+                        <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                    </div>
 
-                        <div class="root__row-about">
-                            <div class="row">
-                                <div class="col-6">
+                    <div class="root__row-about">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="text">
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor
                                     invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et
                                     accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
                                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat.
                                     Lorem ipsum dolor sit amet. Lorem ipsum eat.
                                 </div>
-                                <div class="col-6">
+                            </div>
+                            <div class="col-6">
+                                <div class="text">
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor
                                     invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam
                                     et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
@@ -86,51 +86,51 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/about/about-1.jpg',
                                     alt: 'face-1',
                                 },
                                 title: 'Md. Khalil Uddin',
                                 subtitle: 'Head of Ideas',
-                             })
-                            </div>
-                            <div class="col">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/about/about-2.jpg',
                                     alt: 'face-2',
                                 },
                                 title: 'Rubel Miah',
                                 subtitle: 'Lead WordPress Developer',
-                              })
-                            </div>
-                            <div class="col">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/about/about-3.jpg',
                                     alt: 'face-3',
                                 },
                                 title: 'Shamim Mia',
                                 subtitle: 'Sr. Web Developer',
-                                })
-                            </div>
-                            <div class="col">
-                                <!-- prettier-ignore -->
-                                @include('./blocks/about.html', {
+                            })
+                        </div>
+                        <div class="col-3">
+                            <!-- prettier-ignore -->
+                            @include('./blocks/about.html', {
                                 img: {
                                     url: '@webRoot/images/about/about-4.jpg',
                                     alt: 'face-4',
                                 },
                                 title: 'John Doe',
                                 subtitle: 'Front-end Developer',
-                                })
-                            </div>
+                            })
                         </div>
                     </div>
                 </div>
@@ -262,47 +262,45 @@
             <!-- Секция Blog-->
             <section id="blog" class="section">
                 <div class="container">
-                    <div class="text">
-                        <div class="root__title-section-wrap">
-                            <h2 class="title root__title-section">Recent blog posts</h2>
-                            <div class="line root__line"></div>
-                            <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-                        </div>
+                    <div class="root__title-section-wrap">
+                        <h2 class="title root__title-section">Recent blog posts</h2>
+                        <div class="line root__line"></div>
+                        <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
+                    </div>
 
-                        <div class="root__blog">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/blog.html', {
-                                img: {
-                                    url: '@webRoot/images/blog/blog-1.jpg',
-                                    alt: 'blog-1',
-                                },
-                                date: {
-                                    day: '18',
-                                    month: 'OCT',
-                                },
-                                title: 'Startup ideas needs to be funded',
-                                author: 'Khalil Uddin',
-                                category: 'Development',
-                                text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
-                            })
-                        </div>
-                        <div class="root__blog">
-                            <!-- prettier-ignore -->
-                            @include('./blocks/blog.html', {
-                                img: {
-                                    url: '@webRoot/images/blog/blog-2.jpg',
-                                    alt: 'blog-1',
-                                },
-                                date: {
-                                    day: '18',
-                                    month: 'OCT',
-                                },
-                                title: 'User Interface Designing Elements',
-                                author: 'Khalil Uddin',
-                                category: 'Development',
-                                text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
-                            })
-                        </div>
+                    <div class="root__blog">
+                        <!-- prettier-ignore -->
+                        @include('./blocks/blog.html', {
+                            img: {
+                                url: '@webRoot/images/blog/blog-1.jpg',
+                                alt: 'blog-1',
+                            },
+                            date: {
+                                day: '18',
+                                month: 'OCT',
+                            },
+                            title: 'Startup ideas needs to be funded',
+                            author: 'Khalil Uddin',
+                            category: 'Development',
+                            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                        })
+                    </div>
+                    <div class="root__blog">
+                        <!-- prettier-ignore -->
+                        @include('./blocks/blog.html', {
+                            img: {
+                                url: '@webRoot/images/blog/blog-2.jpg',
+                                alt: 'blog-1',
+                            },
+                            date: {
+                                day: '18',
+                                month: 'OCT',
+                            },
+                            title: 'User Interface Designing Elements',
+                            author: 'Khalil Uddin',
+                            category: 'Development',
+                            text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam'
+                        })
                     </div>
                 </div>
             </section>
@@ -341,7 +339,7 @@
                                     @include('./blocks/contact.html', {
                                         icon: 'mail',
                                         title: 'e-mail',
-                                    text: '<a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a> <br /> <a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a>',
+                                        text: '<a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a> <br /> <a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a>',
                                     })
                                 </div>
                             </div>
