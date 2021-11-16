@@ -1,26 +1,78 @@
 .text {
-    p {
-        margin: 16px 0;
-    }
-
+    p,
     ul,
     ol {
         margin: 16px 0;
+
+        li {
+            margin-top: 8px;
+        }
 
         & > li {
             margin-top: 8px;
         }
-    }
 
-    p,
-    ul,
-    ol {
         &:first-child {
             margin-top: 0;
         }
 
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    ul:first-of-type,
+    ol:first-of-type {
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+
+        & li::before {
+            padding-right: 4px;
+            color: $color-primary;
+            content: '●';
+        }
+    }
+
+    /* 1-й уровень ol*/
+    ol {
+        list-style-type: none;
+
+        li {
+            counter-increment: num;
+
+            &::before {
+                font-weight: bold;
+                padding-right: 4px;
+                content: counter(num) '.';
+            }
+        }
+    }
+
+    /* 2-й уровень ol*/
+    ol ol {
+        counter-reset: num2;
+
+        & > li {
+            counter-increment: num2;
+
+            &::before {
+                content: counter(num) '.' counter(num2) '.';
+            }
+        }
+    }
+
+    /* 3-й уровень ol*/
+    ol ol ol {
+        counter-reset: num3;
+
+        & > li {
+            counter-increment: num3;
+            &::before {
+                content: counter(num) '.' counter(num2) '.' counter(num3) '.';
+            }
         }
     }
 }
