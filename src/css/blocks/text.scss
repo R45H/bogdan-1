@@ -1,36 +1,36 @@
-.text {
-    p,
-    ul,
-    ol {
-        display: inline-block;
-        margin: 8px 0;
-
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+@mixin children-gap($margin) {
+    &:first-child {
+        margin-top: $margin;
     }
 
-    ul,
-    ol {
-        li {
-            display: inline-block;
-            margin: 8px 0;
+    &:last-child {
+        margin-bottom: $margin;
+    }
+}
 
+.text {
+    p,
+    ol,
+    ul {
+        margin: 16px 0;
+        @include children-gap(0);
+    }
+
+    li {
+        margin: 8px 0;
+        @include children-gap(0);
+    }
+
+    ol,
+    ul {
+        ol,
+        ul {
             &:first-child {
-                margin-top: 0;
+                margin-top: 16px;
             }
 
             &:last-child {
                 margin-bottom: 0;
-            }
-
-            > ol:first-child,
-            > ul:first-child {
-                margin-top: 16px;
             }
         }
     }
