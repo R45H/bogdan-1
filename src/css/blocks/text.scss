@@ -23,37 +23,48 @@
 
     ol,
     ul {
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+
+        li {
+            padding-left: 40px;
+            position: relative;
+        }
+
         ol,
         ul {
             &:first-child {
                 margin-top: 16px;
             }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
     }
 
     ul {
-        list-style-type: none;
-
-        & li::before {
-            padding-right: 4px;
-            color: $color-primary;
-            content: '●';
+        li::before {
+            position: absolute;
+            content: '';
+            left: 16px;
+            top: 6px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $color-primary;
         }
     }
 
     ol {
         counter-reset: num;
-        list-style-type: none;
 
         li::before {
+            position: absolute;
+            text-align: right;
+            left: -4px;
+            width: 36px;
             counter-increment: num;
             content: counters(num, '.') '.';
             font-weight: bold;
-            padding-right: 4px;
+            word-break: break-all;
         }
     }
 }
