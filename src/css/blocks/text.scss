@@ -1,0 +1,70 @@
+@mixin children-gap($margin) {
+    &:first-child {
+        margin-top: $margin;
+    }
+
+    &:last-child {
+        margin-bottom: $margin;
+    }
+}
+
+.text {
+    p,
+    ol,
+    ul {
+        margin: 16px 0;
+        @include children-gap(0);
+    }
+
+    li {
+        margin: 8px 0;
+        @include children-gap(0);
+    }
+
+    ol,
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+            padding-left: 40px;
+            position: relative;
+        }
+
+        ol,
+        ul {
+            &:first-child {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    ul {
+        li::before {
+            position: absolute;
+            content: '';
+            left: 17px;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $color-primary;
+        }
+    }
+
+    ol {
+        counter-reset: num;
+
+        li::before {
+            position: absolute;
+            left: 0;
+            width: 40px;
+            padding-right: 8px;
+            counter-increment: num;
+            content: counters(num, '.') '.';
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
