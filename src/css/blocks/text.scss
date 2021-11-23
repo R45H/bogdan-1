@@ -43,10 +43,10 @@
         li::before {
             position: absolute;
             content: '';
-            left: 16px;
-            top: 6px;
-            width: 8px;
-            height: 8px;
+            left: 17px;
+            top: 8px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
             background-color: $color-primary;
         }
@@ -57,13 +57,14 @@
 
         li::before {
             position: absolute;
-            text-align: right;
-            left: -4px;
-            width: 36px;
+            left: 0;
+            width: 40px;
+            padding-right: 8px;
             counter-increment: num;
             content: counters(num, '.') '.';
             font-weight: bold;
-            word-break: break-all;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }
