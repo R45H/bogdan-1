@@ -56,4 +56,10 @@
     &__subtitle {
         margin-top: 12px;
     }
+
+    @media (max-width: 768px) {
+        .row .col-3 {
+            width: 50%;
+        }
+    }
 }

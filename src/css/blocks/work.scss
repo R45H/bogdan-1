@@ -39,9 +39,17 @@
 
     &__subtitle {
         margin-top: 8px;
+
+        @media (max-width: 768px) {
+            margin-top: 4px;
+        }
     }
 
     &__button {
         margin-top: 20px;
+
+        @media (max-width: 768px) {
+            margin-top: 8px;
+        }
     }
 }

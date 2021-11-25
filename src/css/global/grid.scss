@@ -4,6 +4,30 @@ $columns: 12;
 
 .container {
     margin: 0 auto;
+
+    @media (max-width: 576px) {
+        .container {
+            max-width: 544px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            max-width: 736px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 1170px;
+        }
+    }
 }
 
 .container,
@@ -23,6 +47,16 @@ $columns: 12;
     }
 }
 
+@media (max-width: 768px) {
+    .blog .row {
+        flex-direction: column;
+
+        [class^='col-']:first-child {
+            width: 100%;
+        }
+    }
+}
+
 .row-gap-sm {
     margin: (-$gap-sm * 2) (-$gap-sm) 0;
 
@@ -30,11 +64,23 @@ $columns: 12;
         margin-top: $gap-sm * 2;
         padding: 0 $gap-sm;
     }
+
+    @media (max-width: 768px) {
+        margin: (-$gap-sm * 2 / 2) (-$gap-sm / 2) 0;
+
+        > [class|='col'] {
+            margin-top: $gap-sm / 2;
+        }
+    }
 }
 
 [class|='col'] {
     margin-top: $gap-md * 2;
     padding: 0 $gap-md;
+
+    @media (max-width: 768px) {
+        margin-top: $gap-md;
+    }
 }
 
 .col {
@@ -51,274 +97,30 @@ $columns: 12;
     }
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 544px;
+@for $i from 1 through $columns {
+    .col-sm-#{$i} {
+        flex: 0 0 auto;
+        width: 100% / $columns * $i;
     }
 }
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+@for $i from 1 through $columns {
+    .col-md-#{$i} {
+        flex: 0 0 auto;
+        width: 100% / $columns * $i;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 736px;
+@for $i from 1 through $columns {
+    .col-lg-#{$i} {
+        flex: 0 0 auto;
+        width: 100% / $columns * $i;
     }
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
-}
-
-@media (min-width: 544px) {
-    .col-sm-1 {
+@for $i from 1 through $columns {
+    .col-xl-#{$i} {
         flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-
-    .col-sm-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
-    .col-sm-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .col-sm-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .col-sm-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .col-sm-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    .col-sm-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    .col-sm-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .col-sm-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    .col-sm-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-
-    .col-sm-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .col-md-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-
-    .col-md-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
-    .col-md-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .col-md-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .col-md-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-md-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .col-md-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    .col-md-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    .col-md-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .col-md-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    .col-md-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-
-    .col-md-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .col-lg-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-
-    .col-lg-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
-    .col-lg-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .col-lg-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .col-lg-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-lg-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .col-lg-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    .col-lg-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    .col-lg-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .col-lg-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    .col-lg-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-
-    .col-lg-12 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-xl-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-
-    .col-xl-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
-    .col-xl-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .col-xl-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-
-    .col-xl-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
-
-    .col-xl-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .col-xl-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    .col-xl-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    .col-xl-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .col-xl-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    .col-xl-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
-
-    .col-xl-12 {
-        flex: 0 0 auto;
-        width: 100%;
+        width: 100% / $columns * $i;
     }
 }

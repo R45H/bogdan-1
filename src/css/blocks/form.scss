@@ -1,6 +1,10 @@
 .form {
     &__footer {
         align-items: center;
+
+        @media (max-width: 768px) {
+            align-items: start;
+        }
     }
 
     &__remark {
