@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 
     &__link {
         @extend %transition;
