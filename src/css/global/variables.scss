@@ -10,6 +10,57 @@ $color-white-darker: darken($color-white, 10%);
 $color-white-darkest: darken($color-white, 20%);
 $color-black: #000;
 
+$point-sm: 576px;
+$point-md: 768px;
+$point-lg: 992px;
+$point-xl: 1200px;
+
 %transition {
     transition: 0.3s ease;
+}
+
+@mixin screen-up($point) {
+    @if $point == sm {
+        @media (min-width: $point-sm) {
+            @content;
+        }
+    }
+
+    @if $point == md {
+        @media (min-width: $point-md) {
+            @content;
+        }
+    }
+
+    @if $point == lg {
+        @media (min-width: $point-lg) {
+            @content;
+        }
+    }
+
+    @if $point == xl {
+        @media (min-width: $point-xl) {
+            @content;
+        }
+    }
+}
+
+@mixin screen-down($point) {
+    @if $point == md {
+        @media (max-width: $point-md - 1px) {
+            @content;
+        }
+    }
+
+    @if $point == lg {
+        @media (max-width: $point-lg - 1px) {
+            @content;
+        }
+    }
+
+    @if $point == xl {
+        @media (max-width: $point-xl - 1px) {
+            @content;
+        }
+    }
 }
