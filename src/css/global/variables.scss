@@ -20,47 +20,17 @@ $point-xl: 1200px;
 }
 
 @mixin screen-up($point) {
-    @if $point == sm {
-        @media (min-width: $point-sm) {
-            @content;
-        }
-    }
-
-    @if $point == md {
-        @media (min-width: $point-md) {
-            @content;
-        }
-    }
-
-    @if $point == lg {
-        @media (min-width: $point-lg) {
-            @content;
-        }
-    }
-
-    @if $point == xl {
-        @media (min-width: $point-xl) {
-            @content;
-        }
+    @media (min-width: if($point == sm, $point-sm,
+                         if($point == md, $point-md,
+                            if($point == lg, $point-lg, $point-xl)))) {
+        @content;
     }
 }
 
 @mixin screen-down($point) {
-    @if $point == md {
-        @media (max-width: $point-md - 1px) {
-            @content;
-        }
-    }
-
-    @if $point == lg {
-        @media (max-width: $point-lg - 1px) {
-            @content;
-        }
-    }
-
-    @if $point == xl {
-        @media (max-width: $point-xl - 1px) {
-            @content;
-        }
+    @media (max-width: if($point == sm, $point-sm - 1px,
+                         if($point == md, $point-md - 1px,
+                            if($point == lg, $point-lg - 1px, $point-xl - 1px)))) {
+        @content;
     }
 }
