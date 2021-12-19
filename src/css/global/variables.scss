@@ -6,8 +6,8 @@ $color-text: #555;
 $color-text-active: darken($color-text, 10%);
 $color-gray: #f8f8f8;
 $color-white: #fff;
-$color-white-darker: darken($color-white, 10%);
-$color-white-darkest: darken($color-white, 20%);
+$color-white-darker: darken($color-white, 15%);
+$color-white-darkest: darken($color-white, 30%);
 $color-black: #000;
 
 %transition {
