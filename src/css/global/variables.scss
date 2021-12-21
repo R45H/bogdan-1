@@ -20,17 +20,21 @@ $point-xl: 1200px;
 }
 
 @mixin screen-up($point) {
-    @media (min-width: if($point == sm, $point-sm,
-                         if($point == md, $point-md,
-                            if($point == lg, $point-lg, $point-xl)))) {
+    $is-sm: $point == sm;
+    $is-md: $point == md;
+    $is-lg: $point == lg;
+
+    @media (min-width: if($is-sm, $point-sm, if($is-md, $point-md, if($is-lg, $point-lg, $point-xl)))) {
         @content;
     }
 }
 
 @mixin screen-down($point) {
-    @media (max-width: if($point == sm, $point-sm - 1px,
-                         if($point == md, $point-md - 1px,
-                            if($point == lg, $point-lg - 1px, $point-xl - 1px)))) {
+    $is-sm: $point == sm;
+    $is-md: $point == md;
+    $is-lg: $point == lg;
+
+    @media (max-width: if($is-sm, $point-sm - 1px, if($is-md, $point-md - 1px, if($is-lg, $point-lg - 1px, $point-xl - 1px)))) {
         @content;
     }
 }

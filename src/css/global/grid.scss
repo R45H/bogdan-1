@@ -53,36 +53,6 @@ $columns: 12;
     width: auto;
 }
 
-@include screen-down(lg) {
-    .row {
-        margin: (-$gap-md) (-$gap-md) 0;
-        [class|='col'] {
-            padding: 0 $gap-md;
-        }
-    }
-}
-
-@include screen-down(md) {
-    .row {
-        margin: (-$gap-md) (-$gap-md / 2) 0;
-
-        [class|='col'] {
-            padding: 0 $gap-md;
-        }
-    }
-}
-
-@include screen-down(sm) {
-    .row {
-        margin: (-$gap-md) $gap-md 0;
-
-        [class|='col'] {
-            margin-top: $gap-md * 2;
-            padding: 0 $gap-md / 4;
-        }
-    }
-}
-
 @for $i from 1 through $columns {
     .col-#{$i} {
         width: 100% / $columns * $i;
