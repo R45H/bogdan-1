@@ -16,10 +16,6 @@
     cursor: pointer;
     text-align: center;
 
-    &_full-width {
-        width: 100%;
-    }
-
     &:hover {
         background-color: $color-white;
         color: $color-text;
@@ -80,6 +76,10 @@
             box-shadow: 0 0 2px 1px $color-text-active;
             color: $color-white;
         }
+    }
+
+    &_full-width {
+        width: 100%;
     }
 }
 
