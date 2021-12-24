@@ -91,7 +91,7 @@ $columns: 12;
 .row-gap-sm {
     margin: (-$gap-sm * 2) (-$gap-sm) 0;
 
-    [class|='col'] {
+    > [class|='col'] {
         margin-top: $gap-sm * 2;
         padding: 0 $gap-sm;
     }

@@ -16,6 +16,10 @@
     cursor: pointer;
     text-align: center;
 
+    &_full-width {
+        width: 100%;
+    }
+
     &:hover {
         background-color: $color-white;
         color: $color-text;
