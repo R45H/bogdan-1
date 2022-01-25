@@ -45,6 +45,16 @@ $columns: 12;
     padding: 0 $gap-md;
 }
 
+@media (max-width: 575px) {
+    .row {
+        margin: (-$gap-md) (-$gap-md) 0;
+    }
+
+    [class|='col'] {
+        margin-top: $gap-md;
+    }
+}
+
 .col {
     flex: 1 0;
 }
