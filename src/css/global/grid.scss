@@ -45,16 +45,6 @@ $columns: 12;
     padding: 0 $gap-md;
 }
 
-@media (max-width: 575px) {
-    .row {
-        margin: (-$gap-md) (-$gap-md) 0;
-    }
-
-    [class|='col'] {
-        margin-top: $gap-md;
-    }
-}
-
 .col {
     flex: 1 0;
 }
@@ -104,5 +94,15 @@ $columns: 12;
     > [class|='col'] {
         margin-top: $gap-sm * 2;
         padding: 0 $gap-sm;
+    }
+}
+
+.row-gap-sm-half {
+    @include screen-down(sm) {
+        margin-top: -$gap-md;
+
+        [class|='col'] {
+            margin-top: $gap-md;
+        }
     }
 }
