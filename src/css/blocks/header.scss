@@ -3,3 +3,20 @@
     align-items: flex-end;
     justify-content: space-between;
 }
+
+@include screen-down(sm) {
+    .nav {
+        display: none;
+    }
+
+    .nav-burger {
+        display: block;
+        position: relative;
+        bottom: 12px;
+    }
+
+    .nav-burger__nav {
+        position: relative;
+        right: 70px;
+    }
+}

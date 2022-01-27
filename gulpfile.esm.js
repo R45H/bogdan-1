@@ -52,6 +52,11 @@ const paths = {
         src: `${srcPath}/images/svg-sprite/**/*.svg`,
         dest: `${distPath}/images`,
     },
+
+    js: {
+        src: `${srcPath}/js/*.js`,
+        dest: `${distPath}/js`,
+    },
 };
 
 export const clean = () => {
@@ -124,6 +129,12 @@ export const sprite = () => {
         .pipe(bs.stream());
 };
 
+export const js = () => {
+    return src(paths.js.src, { since: lastRun(js) })
+        .pipe(dest(paths.js.dest))
+        .pipe(bs.stream());
+};
+
 export const watcher = () => {
     bs.init({
         server: distPath,
@@ -137,8 +148,9 @@ export const watcher = () => {
     watch(paths.fonts.src, fonts);
     watch(paths.images.src, images);
     watch(paths.svgSprite.src, sprite);
+    watch(paths.js.src, js);
 };
 
-export const build = parallel(html, scss, cssLibs, fonts, images, sprite);
+export const build = parallel(html, scss, cssLibs, fonts, images, sprite, js);
 
 export default series(clean, build, watcher);
