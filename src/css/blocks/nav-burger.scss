@@ -1,5 +1,6 @@
 .nav-burger {
     display: none;
+    position: relative;
     width: 24px;
     min-width: 24px;
     height: 24px;
@@ -36,27 +37,10 @@
         }
     }
 
-    .nav-burger__icon_on {
-        background-color: transparent;
-
-        &::before {
-            transform: rotate(135deg);
-            top: 0;
-        }
-
-        &::after {
-            transform: rotate(-135deg);
-            bottom: 0;
-        }
-
-        .nav-burger__nav {
-            display: block;
-        }
-    }
-
     &__nav {
         display: none;
         padding: 0;
+        margin-bottom: 0;
         width: 90px;
         background-color: $color-white;
         border: 1px solid $color-primary-active;
@@ -80,6 +64,26 @@
 
         &:active {
             background-color: $color-gray;
+        }
+    }
+
+    &_on {
+        .nav-burger__icon {
+            background-color: transparent;
+
+            &::before {
+                transform: rotate(135deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-135deg);
+                bottom: 0;
+            }
+        }
+
+        .nav-burger__nav {
+            display: block;
         }
     }
 }

@@ -2,21 +2,25 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-}
 
-@include screen-down(sm) {
-    .nav {
-        display: none;
+    &__nav-burger {
+        .nav-burger {
+            bottom: 12px;
+
+            &__nav {
+                position: relative;
+                right: 70px;
+            }
+        }
     }
 
-    .nav-burger {
-        display: block;
-        position: relative;
-        bottom: 12px;
-    }
+    @include screen-down(md) {
+        .nav {
+            display: none;
 
-    .nav-burger__nav {
-        position: relative;
-        right: 70px;
+            &-burger {
+                display: block;
+            }
+        }
     }
 }
