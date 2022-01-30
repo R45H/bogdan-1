@@ -40,6 +40,11 @@ const paths = {
         watch: [`${srcPath}/css/libs.css`, `${srcPath}/libs/**/*.css`],
         dest: `${distPath}/css`,
     },
+    javaScript: {
+        src: `${srcPath}/js/*.js`,
+        watch: `${srcPath}/js/*.js`,
+        dest: `${distPath}/js`,
+    },
     fonts: {
         src: `${srcPath}/fonts/**/*`,
         dest: `${distPath}/fonts`,
@@ -94,6 +99,12 @@ export const cssLibs = () => {
         .pipe(bs.stream());
 };
 
+export const javaScript = () => {
+    return src(paths.javaScript.src, { since: lastRun(javaScript) })
+        .pipe(dest(paths.javaScript.dest))
+        .pipe(bs.stream());
+};
+
 export const fonts = () => {
     return src(paths.fonts.src, { since: lastRun(fonts) })
         .pipe(dest(paths.fonts.dest))
@@ -134,11 +145,12 @@ export const watcher = () => {
     watch(paths.html.watch, html);
     watch(paths.scss.watch, scss);
     watch(paths.cssLibs.watch, cssLibs);
+    watch(paths.javaScript.src, javaScript)
     watch(paths.fonts.src, fonts);
     watch(paths.images.src, images);
     watch(paths.svgSprite.src, sprite);
 };
 
-export const build = parallel(html, scss, cssLibs, fonts, images, sprite);
+export const build = parallel(html, scss, cssLibs, javaScript, fonts, images, sprite);
 
 export default series(clean, build, watcher);
