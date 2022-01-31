@@ -14,6 +14,7 @@ import cssImport from 'gulp-cssimport';
 import stripCssComments from 'gulp-strip-css-comments';
 import minifyCss from 'gulp-clean-css';
 import rename from 'gulp-rename';
+import jsInclude from 'gulp-include';
 import svgSprite from 'gulp-svg-sprite';
 
 const isProd = env.production;
@@ -41,8 +42,8 @@ const paths = {
         dest: `${distPath}/css`,
     },
     javaScript: {
-        src: `${srcPath}/js/*.js`,
-        watch: `${srcPath}/js/*.js`,
+        src: `${srcPath}/script.js`,
+        watch: [`${srcPath}/script.js`, `${srcPath}/{blocks,global}/**/*.js`],
         dest: `${distPath}/js`,
     },
     fonts: {
@@ -101,6 +102,9 @@ export const cssLibs = () => {
 
 export const javaScript = () => {
     return src(paths.javaScript.src, { since: lastRun(javaScript) })
+        .pipe(isProd ? noop() : sourceMaps.init())
+        .pipe(jsInclude())
+        .pipe(isProd ? beautify.js({}) : sourceMaps.write())
         .pipe(dest(paths.javaScript.dest))
         .pipe(bs.stream());
 };
@@ -145,7 +149,7 @@ export const watcher = () => {
     watch(paths.html.watch, html);
     watch(paths.scss.watch, scss);
     watch(paths.cssLibs.watch, cssLibs);
-    watch(paths.javaScript.src, javaScript)
+    watch(paths.javaScript.watch, javaScript);
     watch(paths.fonts.src, fonts);
     watch(paths.images.src, images);
     watch(paths.svgSprite.src, sprite);
