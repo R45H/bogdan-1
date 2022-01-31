@@ -26,18 +26,18 @@ const distPath = `./dist/${isProd ? 'production' : 'development'}`;
 
 const paths = {
     html: {
-        src: `${srcPath}/html/*.html`,
-        watch: `${srcPath}/html/**/*.html`,
+        src: `${srcPath}/pages/*.html`,
+        watch: `${srcPath}/{pages,blocks}/**/*.html`,
         dest: distPath,
     },
     scss: {
-        src: `${srcPath}/css/style.scss`,
-        watch: `${srcPath}/css/**/*.scss`,
+        src: `${srcPath}/style.scss`,
+        watch: [`${srcPath}/style.scss`, `${srcPath}/{blocks,global}/**/*.scss`],
         dest: `${distPath}/css`,
     },
     cssLibs: {
-        src: `${srcPath}/css/libs.css`,
-        watch: [`${srcPath}/css/libs.css`, `${srcPath}/libs/**/*.css`],
+        src: `${srcPath}/libs.css`,
+        watch: [`${srcPath}/libs.css`, `${srcPath}/libs/**/*.css`],
         dest: `${distPath}/css`,
     },
     javaScript: {
