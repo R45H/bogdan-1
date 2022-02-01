@@ -111,17 +111,17 @@
                     <div class="block__body">
                         <div class="block__item block__item_wide">
                             <div class="row">
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'fb' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'tw' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'gp' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'linkedin' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'arrow' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'code' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'mail' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'a' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'point' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'smartphone' })</div>
-                                <div class="col-1">@include('./blocks/icon.html', { name: 'lifebuoy' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'fb' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'tw' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'gp' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'linkedin' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'arrow' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'code' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'mail' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'a' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'point' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'smartphone' })</div>
+                                <div class="col-1">@include('../blocks/icon/icon.html', { name: 'lifebuoy' })</div>
                             </div>
                         </div>
                     </div>
@@ -160,21 +160,21 @@
                         <div class="block__item block__item_dark">
                             <div class="button">
                                 <span>.button</span>
-                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                                @include('../blocks/icon/icon.html', { name: 'arrow', classes: 'button__icon' })
                             </div>
                         </div>
 
                         <div class="block__item block__item_dark">
                             <div class="button button_type_light">
                                 <span>.button.button_type_light</span>
-                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                                @include('../blocks/icon/icon.html', { name: 'arrow', classes: 'button__icon' })
                             </div>
                         </div>
 
                         <div class="block__item">
                             <div class="button button_type_form">
                                 <span>.button.button_type_form</span>
-                                @include('./blocks/icon.html', { name: 'arrow', classes: 'button__icon' })
+                                @include('../blocks/icon/icon.html', { name: 'arrow', classes: 'button__icon' })
                             </div>
                         </div>
 
@@ -242,7 +242,9 @@
                     <div class="block__name">Меню</div>
 
                     <div class="block__body">
-                        <div class="block__item block__item_dark block__item_wide">@include('./blocks/nav.html')</div>
+                        <div class="block__item block__item_dark block__item_wide">
+                            @include('../blocks/nav/nav.html')
+                        </div>
                     </div>
                 </div>
                 <!-- Социальные иконки -->
@@ -250,10 +252,10 @@
                     <div class="block__name">Социальные иконки</div>
 
                     <div class="block__body">
-                        <div class="block__item block__item_dark">@include('./blocks/social.html')</div>
+                        <div class="block__item block__item_dark">@include('../blocks/social/social.html')</div>
 
                         <div class="block__item block__item_dark">
-                            @include('./blocks/social.html', { classes: 'social_alternative' })
+                            @include('../blocks/social/social.html', { classes: 'social_alternative' })
                         </div>
                     </div>
                 </div>
@@ -266,7 +268,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <!-- prettier-ignore -->
-                                    @include('./blocks/service.html', {
+                                    @include('../blocks/service/service.html', {
                                         iconName: 'a',
                                         title: 'Clean typography',
                                         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.'
@@ -285,7 +287,7 @@
                             <div class="row">
                                 <div class="col-3">
                                     <!-- prettier-ignore -->
-                                    @include('./blocks/about.html', {
+                                    @include('../blocks/about/about.html', {
                                         img: {
                                             url: '@webRoot/images/about/about-1.jpg',
                                             alt: 'about-1',
@@ -307,7 +309,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <!-- prettier-ignore -->
-                                    @include('./blocks/work.html', {
+                                    @include('../blocks/work/work.html', {
                                         img: {
                                             url: '@webRoot/images/work/work-1.jpg',
                                             alt: 'work-1',
@@ -327,7 +329,7 @@
                     <div class="block__body">
                         <div class="block__item block__item_wide">
                             <!-- prettier-ignore -->
-                            @include('./blocks/blog.html', {
+                            @include('../blocks/blog/blog.html', {
                                 img: {
                                     url: '@webRoot/images/blog/blog-1.jpg',
                                     alt: 'blog-1',
@@ -349,7 +351,7 @@
                     <div class="block__name">Clients</div>
 
                     <div class="block__body">
-                        <div class="block__item block__item_wide">@include('./blocks/clients.html')</div>
+                        <div class="block__item block__item_wide">@include('../blocks/clients/clients.html')</div>
                     </div>
                 </div>
                 <!-- Блок Line -->
@@ -392,7 +394,7 @@
                     <div class="block__name">Form</div>
 
                     <div class="block__body">
-                        <div class="block__item block__item_wide">@include('./blocks/form.html')</div>
+                        <div class="block__item block__item_wide">@include('../blocks/form/form.html')</div>
                     </div>
                 </div>
                 <!-- Блок Contact -->
@@ -401,7 +403,7 @@
                     <!-- prettier-ignore -->
                     <div class="block__body">
                         <div class="block__item block__item_wide">
-                            @include('./blocks/contact.html', {
+                            @include('../blocks/contact/contact.html', {
                                 icon: 'smartphone',
                                 title: 'Hotline (24x7)',
                                 text: '<a href="tel:+650052300">+65 0052 300</a>, <a href="tel:+6588251210">+65 88251 210</a><br /><a href="tel:+8801723511340">+88 01723 511 340</a>',
