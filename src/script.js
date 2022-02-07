@@ -1,3 +1,3 @@
 window.onload = function () {
-    //=require './blocks/test.js'
+    //=require './blocks/nav-burger/nav-burger.js'
 };

@@ -2,25 +2,4 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-
-    &__nav-burger {
-        .nav-burger {
-            bottom: 12px;
-
-            &__nav {
-                position: relative;
-                right: 70px;
-            }
-        }
-    }
-
-    @include screen-down(md) {
-        .nav {
-            display: none;
-
-            &-burger {
-                display: block;
-            }
-        }
-    }
 }

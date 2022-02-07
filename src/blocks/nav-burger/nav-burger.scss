@@ -6,6 +6,17 @@
     height: 24px;
     border: 2px solid $color-white;
     cursor: pointer;
+    margin-bottom: 8px;
+
+    .block__body & {
+        // для uikit.html
+        display: block;
+        margin-bottom: 0;
+    }
+
+    @include screen-down(md) {
+        display: block;
+    }
 
     &__icon {
         display: block;
@@ -37,37 +48,7 @@
         }
     }
 
-    &__nav {
-        display: none;
-        padding: 0;
-        margin-bottom: 0;
-        width: 90px;
-        background-color: $color-white;
-        border: 1px solid $color-primary-active;
-        list-style-type: none;
-    }
-
-    &__link {
-        display: block;
-        outline: none;
-        padding: 8px 16px;
-        text-decoration: none;
-        color: $color-primary;
-        border-right: 8px solid transparent;
-        border-bottom: none;
-
-        &:hover,
-        &:focus {
-            background-color: $color-gray;
-            border-color: $color-primary-active;
-        }
-
-        &:active {
-            background-color: $color-gray;
-        }
-    }
-
-    &_on {
+    &_active {
         .nav-burger__icon {
             background-color: transparent;
 
@@ -80,10 +61,6 @@
                 transform: rotate(-135deg);
                 bottom: 0;
             }
-        }
-
-        .nav-burger__nav {
-            display: block;
         }
     }
 }
