@@ -2,4 +2,19 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    &__nav {
+        @include screen-down(md) {
+            display: none;
+        }
+    }
+
+    &__nav-burger {
+        display: none;
+        margin-bottom: 8px;
+
+        @include screen-down(md) {
+            display: block;
+        }
+    }
 }

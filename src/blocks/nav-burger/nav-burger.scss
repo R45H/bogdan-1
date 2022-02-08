@@ -1,22 +1,10 @@
 .nav-burger {
-    display: none;
     position: relative;
     width: 24px;
     min-width: 24px;
     height: 24px;
     border: 2px solid $color-white;
     cursor: pointer;
-    margin-bottom: 8px;
-
-    .block__body & {
-        // для uikit.html
-        display: block;
-        margin-bottom: 0;
-    }
-
-    @include screen-down(md) {
-        display: block;
-    }
 
     &__icon {
         display: block;
