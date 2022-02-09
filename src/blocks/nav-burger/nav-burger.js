@@ -1,4 +1,4 @@
-let navBurger = document.querySelectorAll('.nav-burger');
+const navBurger = document.querySelectorAll('.nav-burger');
 
 for (let i = 0; i < navBurger.length; i++) {
     navBurger[i].onclick = function () {
