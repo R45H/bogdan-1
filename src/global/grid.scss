@@ -103,6 +103,14 @@ $columns: 12;
 
         [class|='col'] {
             margin-top: $gap-md;
+
+            > .row {
+                margin-top: -$gap-md;
+
+                [class|='col'] {
+                    margin-top: $gap-md;
+                }
+            }
         }
     }
 }
