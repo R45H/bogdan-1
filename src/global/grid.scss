@@ -97,20 +97,12 @@ $columns: 12;
     }
 }
 
-.row-gap-sm-half {
+.row-sm-gap-half {
     @include screen-down(sm) {
         margin-top: -$gap-md;
 
-        [class|='col'] {
+        > [class|='col'] {
             margin-top: $gap-md;
-
-            > .row {
-                margin-top: -$gap-md;
-
-                [class|='col'] {
-                    margin-top: $gap-md;
-                }
-            }
         }
     }
 }
