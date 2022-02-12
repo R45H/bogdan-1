@@ -1,12 +1,36 @@
+%burger-icon-pseudo {
+    @extend %transition;
+    content: '';
+    position: absolute;
+    background-color: $color-white;
+    width: 14px;
+    height: 2px;
+    border-radius: 1px;
+    left: 0;
+}
+
 .nav-burger {
-    position: relative;
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
-    border: 2px solid $color-white;
+    @extend %transition;
+    display: flex;
+    padding: 8px;
     cursor: pointer;
 
+    &:hover,
+    &:active {
+        transform: scale(1.2, 1.2);
+    }
+
+    .nav-burger__button {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $color-white;
+        background: none;
+        cursor: pointer;
+    }
+
     &__icon {
+        @extend %transition;
         display: block;
         position: absolute;
         top: 9px;
@@ -16,22 +40,13 @@
         height: 2px;
         border-radius: 1px;
 
-        &::before,
-        &::after {
-            @extend %transition;
-            content: '';
-            position: absolute;
-            background-color: $color-white;
-            width: 14px;
-            height: 2px;
-            border-radius: 1px;
-        }
-
         &::before {
+            @extend %burger-icon-pseudo;
             top: 6px;
         }
 
         &::after {
+            @extend %burger-icon-pseudo;
             bottom: 6px;
         }
     }

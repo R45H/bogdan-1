@@ -10,11 +10,9 @@
     }
 
     &__nav-burger {
-        display: none;
-        margin-bottom: 8px;
-
-        @include screen-down(md) {
-            display: block;
+        margin: 0 8px;
+        @include screen-up(md) {
+            display: none;
         }
     }
 }
