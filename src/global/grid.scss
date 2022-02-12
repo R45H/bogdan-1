@@ -96,3 +96,13 @@ $columns: 12;
         padding: 0 $gap-sm;
     }
 }
+
+.row-sm-gap-half {
+    @include screen-down(sm) {
+        margin-top: -$gap-md;
+
+        > [class|='col'] {
+            margin-top: $gap-md;
+        }
+    }
+}
