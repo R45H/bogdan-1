@@ -101,7 +101,7 @@ export const cssLibs = () => {
 };
 
 export const javaScript = () => {
-    return src(paths.javaScript.src, { since: lastRun(javaScript) })
+    return src(paths.javaScript.src)
         .pipe(isProd ? noop() : sourceMaps.init())
         .pipe(jsInclude())
         .pipe(isProd ? beautify.js({}) : sourceMaps.write())

@@ -1,11 +1,15 @@
-const navBurger = document.querySelectorAll('.nav-burger');
+const navBurgers = document.querySelectorAll('.nav-burger');
 
-for (let i = 0; i < navBurger.length; i++) {
-    navBurger[i].onclick = function () {
-        if (navBurger[i].classList.contains('nav-burger_active')) {
-            navBurger[i].classList.remove('nav-burger_active');
+navBurgers.forEach((item, i) => {
+    handleClick(navBurgers[i]);
+});
+
+function handleClick(navBurger) {
+    navBurger.addEventListener('click', function () {
+        if (navBurger.classList.contains('nav-burger_active')) {
+            navBurger.classList.remove('nav-burger_active');
         } else {
-            navBurger[i].classList.add('nav-burger_active');
+            navBurger.classList.add('nav-burger_active');
         }
-    };
+    });
 }
