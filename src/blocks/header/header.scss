@@ -11,6 +11,7 @@
 
     &__nav-burger {
         margin: 0 8px;
+
         @include screen-up(md) {
             display: none;
         }
