@@ -13,6 +13,8 @@
     @extend %transition;
     display: flex;
     padding: 8px;
+    background: transparent;
+    border: none;
     cursor: pointer;
 
     &:hover,
@@ -20,13 +22,11 @@
         transform: scale(1.2, 1.2);
     }
 
-    &__button {
+    &__wrap {
         position: relative;
         width: 24px;
         height: 24px;
         border: 2px solid $color-white;
-        background: transparent;
-        cursor: pointer;
     }
 
     &__icon {
