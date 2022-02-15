@@ -17,10 +17,22 @@
 
     &:hover,
     &:active {
-        transform: scale(1.2, 1.2);
+        .nav-burger__wrap {
+            border-color: $color-white-darker;
+        }
+
+        .nav-burger__icon {
+            background-color: $color-white-darker;
+
+            &::before,
+            &::after {
+                background-color: $color-white-darker;
+            }
+        }
     }
 
     &__wrap {
+        @extend %transition;
         position: relative;
         width: 24px;
         height: 24px;
@@ -60,6 +72,12 @@
             &::after {
                 transform: rotate(-135deg);
                 bottom: 0;
+            }
+        }
+
+        &:hover {
+            .nav-burger__icon {
+                background-color: transparent;
             }
         }
     }
