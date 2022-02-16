@@ -16,6 +16,21 @@
     cursor: pointer;
 
     &:hover,
+    &:focus {
+        .nav-burger__wrap {
+            border-color: $color-white-darker;
+        }
+
+        .nav-burger__icon {
+            background-color: $color-white-darker;
+
+            &::before,
+            &::after {
+                background-color: $color-white-darker;
+            }
+        }
+    }
+
     &:active {
         .nav-burger__wrap {
             border-color: $color-white-darkest;
@@ -76,7 +91,7 @@
         }
 
         &:hover,
-        &:active {
+        &:focus {
             .nav-burger__icon {
                 background-color: transparent;
             }
