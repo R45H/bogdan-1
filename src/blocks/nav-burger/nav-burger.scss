@@ -18,15 +18,15 @@
     &:hover,
     &:active {
         .nav-burger__wrap {
-            border-color: $color-white-darker;
+            border-color: $color-white-darkest;
         }
 
         .nav-burger__icon {
-            background-color: $color-white-darker;
+            background-color: $color-white-darkest;
 
             &::before,
             &::after {
-                background-color: $color-white-darker;
+                background-color: $color-white-darkest;
             }
         }
     }
@@ -75,7 +75,8 @@
             }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             .nav-burger__icon {
                 background-color: transparent;
             }
