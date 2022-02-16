@@ -91,7 +91,8 @@
         }
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
             .nav-burger__icon {
                 background-color: transparent;
             }
