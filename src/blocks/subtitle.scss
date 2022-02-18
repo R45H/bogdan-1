@@ -1,21 +1,25 @@
 .subtitle {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
 
     &_size_xs {
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     &_size_sm {
-        font-size: 13px;
+        font-size: 1.3rem;
     }
 
     &_size_lg {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     &_size_xl {
-        font-size: 30px;
+        font-size: 3rem;
+
+        @include screen-down(sm) {
+            font-size: 2rem;
+        }
     }
 }

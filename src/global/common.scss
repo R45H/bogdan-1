@@ -1,5 +1,18 @@
 html {
     box-sizing: border-box;
+    font-size: 7px;
+
+    @include screen-up(sm) {
+        font-size: 8px;
+    }
+
+    @include screen-up(md) {
+        font-size: 9px;
+    }
+
+    @include screen-up(lg) {
+        font-size: 10px;
+    }
 }
 
 *,
@@ -10,7 +23,7 @@ html {
 
 body {
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
     color: $color-text;
 }

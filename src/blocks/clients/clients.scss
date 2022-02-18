@@ -9,7 +9,11 @@
     }
 
     &__img {
-        padding: 4px 18px;
+        padding: 0.4rem 1.8rem;
+
+        @include screen-down(sm) {
+            margin-bottom: 1.6rem;
+        }
     }
 
     &__quote {
@@ -19,12 +23,12 @@
 
     &__quote-text {
         margin-top: 32px;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-style: italic;
     }
 
     &__quote-author {
         margin-top: 36px;
-        font-size: 20px;
+        font-size: 2rem;
     }
 }

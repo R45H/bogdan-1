@@ -44,7 +44,15 @@ $color-line: #ddd;
 
     &__title-section-wrap {
         text-align: center;
-        margin-bottom: 68px;
+        margin-bottom: 6.8rem;
+
+        @include screen-down(md) {
+            margin-bottom: 5.2rem;
+        }
+
+        @include screen-down(sm) {
+            margin-bottom: 3.2rem;
+        }
     }
 
     &__title-section {
@@ -69,6 +77,14 @@ $color-line: #ddd;
     }
 
     &__row-about {
-        margin-bottom: 68px;
+        margin-bottom: 6.8rem;
+
+        @include screen-down(md) {
+            margin-bottom: 5.2rem;
+        }
+
+        @include screen-down(sm) {
+            margin-bottom: 3.2rem;
+        }
     }
 }
