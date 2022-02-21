@@ -2,16 +2,6 @@
     padding: 10rem 0;
     background: no-repeat center / cover;
 
-    &:not(:first-child) {
-        @include screen-down(md) {
-            padding: 7.2rem 0;
-        }
-
-        @include screen-down(sm) {
-            padding: 5.2rem 0;
-        }
-    }
-
     &_first {
         display: flex;
         align-items: center;
