@@ -13,11 +13,11 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: $color-text;
+}
 
-    ::selection {
-        color: $color-white;
-        background-color: $color-primary;
-    }
+::selection {
+    color: $color-white;
+    background-color: $color-primary;
 }
 
 a:not([class]),
