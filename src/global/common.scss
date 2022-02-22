@@ -28,6 +28,11 @@ body {
     color: $color-text;
 }
 
+::selection {
+    color: $color-white;
+    background-color: $color-primary;
+}
+
 a:not([class]),
 a[class=''] {
     @extend %transition;
