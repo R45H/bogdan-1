@@ -1,6 +1,6 @@
-$header-height: 7.2rem;
+$header-height: 72px;
 $content-margin-top: -$header-height;
-$section-padding-top: 10rem + $header-height;
+$section-padding-top: calc(10rem + #{$header-height});
 $color-line: #ddd;
 
 .root {
