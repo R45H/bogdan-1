@@ -1,6 +1,6 @@
 $header-height: 72px;
 $content-margin-top: -$header-height;
-$section-padding-top: 100px + $header-height;
+$section-padding-top: calc(10rem + #{$header-height});
 $color-line: #ddd;
 
 .root {
@@ -44,7 +44,7 @@ $color-line: #ddd;
 
     &__title-section-wrap {
         text-align: center;
-        margin-bottom: 68px;
+        margin-bottom: 6.8rem;
     }
 
     &__title-section {
@@ -69,6 +69,6 @@ $color-line: #ddd;
     }
 
     &__row-about {
-        margin-bottom: 68px;
+        margin-bottom: 6.8rem;
     }
 }

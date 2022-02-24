@@ -16,6 +16,10 @@
     }
 
     &_size_xl {
-        font-size: 30px;
+        font-size: 3rem;
+
+        @include screen-down(sm) {
+            font-size: 18px;
+        }
     }
 }
